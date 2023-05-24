@@ -1,6 +1,6 @@
 var showLoading = function (selector) {
 	var html = "<div id='loadingIcon'>";
-		html += "<img src = '../dolls/images/other/load.gif'></div>";
+		html += "<img src = '../Dannys-Dolls/images/other/load.gif'></div>";
 		document.querySelector(selector).innerHTML = html;
 	}
 
@@ -13,7 +13,7 @@ var insertProperty = function (string, propName, propValue) {
 // CATEGORIES/HOME PAGE // 
 var categoriesOpener = function (callback) {
 	$ajaxUtils
-		.sendGetRequest("../dolls/snippets/categoriesSnippet.html",
+		.sendGetRequest("../Dannys-Dolls/snippets/categoriesSnippet.html",
 			function(request) {
 				var categoriesSnippet = request.responseText;
 				//console.log(categoriesSnippet);
@@ -47,7 +47,7 @@ var searchButtonOpener = function (callback) {
 	document.getElementById("searchButton")
 			.addEventListener("click",function() {
 				$ajaxUtils
-					.sendGetRequest("../dolls/snippets/searchSnippet.html",
+					.sendGetRequest("../Dannys-Dolls/snippets/searchSnippet.html",
 						function(request) {
 							var searchHtml = request.responseText;
 							document.getElementById("search")
@@ -81,12 +81,12 @@ var displaySearch = function(searchCategoryInput, searchNameInput,searchYearInpu
 	searchYear = searchYearInput;
 	searchCondition = searchConditionInput;
 	searchManufacturer = searchManufacturerInput;
-	$ajaxUtils.sendGetRequest("../dolls/snippets/searchResultsSnippet.html",
+	$ajaxUtils.sendGetRequest("../Dannys-Dolls/snippets/searchResultsSnippet.html",
 		function(res) {
 			html = res.responseText;
 		
 		//console.log(html);
-		$ajaxUtils.sendGetRequest("../dolls/data.json",
+		$ajaxUtils.sendGetRequest("../Dannys-Dolls/data.json",
 				function(res) {
 					
 					var data = res.responseText;
@@ -150,7 +150,7 @@ var runSearchInput = function() {
 }
 // DISPLAYING DOLLS //
 var clickableDolls = function() {
-	$ajaxUtils.sendGetRequest("../dolls/data.json",
+	$ajaxUtils.sendGetRequest("../Dannys-Dolls/data.json",
 		function(res) {
 			var data = res.responseText;
 			var dataArr = JSON.parse(data);
@@ -167,10 +167,10 @@ var clickableDolls = function() {
 var displayIdPage = function(dollId) {
 	var toBody = "";
 	var html;
-	$ajaxUtils.sendGetRequest("../dolls/snippets/idSnippet.html",
+	$ajaxUtils.sendGetRequest("../Dannys-Dolls/snippets/idSnippet.html",
 		function(res) {
 			html = res.responseText;
-			$ajaxUtils.sendGetRequest("../dolls/data.json",
+			$ajaxUtils.sendGetRequest("../Dannys-Dolls/data.json",
 				function(res) {
 					data = res.responseText;
 					var dataArr = JSON.parse(data);
@@ -208,7 +208,7 @@ var signInButtonOpener = function (callback) {
 	document.getElementById("signInButton")
 		.addEventListener("click",function() {
 			$ajaxUtils
-				.sendGetRequest("../dolls/snippets/signInSnippet.html",
+				.sendGetRequest("../Dannys-Dolls/snippets/signInSnippet.html",
 					function(request) {
 						var signInHtml = request.responseText;
 						document.getElementById("signInPage")
@@ -231,7 +231,7 @@ var signInButton = function(callback1, callback2) {
 			document.getElementById("wrongSignIn").innerHTML = "";
 			document.getElementById("signInPage").innerHTML = "";
 			$ajaxUtils
-				.sendGetRequest("../dolls/snippets/editSnippet.html",
+				.sendGetRequest("../Dannys-Dolls/snippets/editSnippet.html",
 					function(request) {
 						var editPageHtml = request.responseText;
 						document.getElementById("body")
@@ -308,7 +308,7 @@ var submitNewDoll = function() {
 		}
 		//if (canSubmit == true) {
 		if (true) {
-			$ajaxUtils.sendGetRequest("../dolls/data.json",
+			$ajaxUtils.sendGetRequest("../Dannys-Dolls/data.json",
 				function(res) {
 					var data = res.responseText;
 					var dataArr = JSON.parse(data);
