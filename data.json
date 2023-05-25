@@ -1743,7 +1743,7 @@
         "id": 174,
         "categoryshort": "mh",
         "category": "Monster High",
-        "name": "Ghoul's Alive Spectra Vondersgeist",
+        "name": "Ghoul's Alive Spectra Vondergeist",
         "year": 2012,
         "conditionpurchased": "Childhood",
         "quantity": 1,
@@ -3275,7 +3275,7 @@
         "category": "Rainbow High",
         "name": "Rainbow Vision The Royal Three Tiara Song",
         "year": 2022,
-        "condition": "New",
+        "conditionpurchased": "New",
         "quantity": 1,
         "manufacturer": "MGA Entertainment"
     }
