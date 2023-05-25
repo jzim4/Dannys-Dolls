@@ -464,6 +464,9 @@ input[type="file"] {
   .categoryBox {
     padding: 5px;
   }
+  #searchingLabelBox1, #searchingLabelBox2 {
+    margin: 15px;
+  }
 }
 @media (min-width: 425px) and (max-width: 767px) {
   .categoryBox {

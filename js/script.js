@@ -190,8 +190,14 @@ var displayIdPage = function(dollId) {
 					var prepareToBody4 = insertProperty(prepareToBody3,"conditionpurchased",doll.conditionpurchased);
 					var prepareToBody5 = insertProperty(prepareToBody4,"quantity",doll.quantity);
 					var prepareToBody6 = insertProperty(prepareToBody5,"manufacturer",doll.manufacturer);
-
-					toBody += prepareToBody6;
+					if (doll.hasOwnProperty("notes")) {
+						var prepareToBody7 = insertProperty(prepareToBody6,"notes",doll.notes);
+					}
+					else {
+						var prepareToBody7 = prepareToBody6.replace("<div id = \"idNotes\" class=\"idInfoLine\">Notes: {{notes}}</div>","");
+					}
+			
+					toBody += prepareToBody7;
 					searchingLabel = searchingLabel.replace("Search", "Return to search");
 					searchingLabel = searchingLabel.replace("1", "2");
 					document.getElementById("body")

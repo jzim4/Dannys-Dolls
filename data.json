@@ -268,7 +268,7 @@
         "id": 27,
         "categoryshort": "barbie",
         "category": "Barbie",
-        "name": "My Scene Jamin' in Jamacia Madison",
+        "name": "My Scene Jamin' in Jamaica Madison",
         "year": 2003,
         "conditionpurchased": "Used",
         "quantity": 1,
@@ -3194,5 +3194,89 @@
         "conditionpurchased": "Childhood",
         "quantity": 1,
         "manufacturer": "McDonalds"
+    },
+    {
+        "id": 319,
+        "categoryshort": "barbie",
+        "category": "Barbie",
+        "name": "Cali Girl Barbie",
+        "year": 2004,
+        "conditionpurchased": "Used (friend's childhood)",
+        "quantity": 2,
+        "manufacturer": "Kanekelon",
+        "notes": "Gift from Gideon (both)"
+    },
+    {
+        "id": 320,
+        "categoryshort": "barbie",
+        "category": "Barbie",
+        "name": "Ballerina Sisters Barbie",
+        "year": 2006,
+        "conditionpurchased": "Used (friend's childhood)",
+        "quantity": 1,
+        "manufacturer": "Mattel",
+        "notes": "Gift from Gideon (both)"
+    },
+    {
+        "id": 321,
+        "categoryshort": "barbie",
+        "category": "Barbie",
+        "name": "Princess and the Pauper Anneliese",
+        "year": 2007,
+        "conditionpurchased": "Childhood",
+        "quantity": 1,
+        "manufacturer": "Mattel",
+        "notes": "need stock number"
+    },
+    {
+        "id": 322,
+        "categoryshort": "barbie",
+        "category": "Barbie",
+        "name": "Candy Glam Teresa",
+        "year": 2008,
+        "conditionpurchased": "Childhood",
+        "quantity": 1,
+        "manufacturer": "Mattel"
+    },
+    {
+        "id": 323,
+        "categoryshort": "barbie",
+        "category": "Barbie",
+        "name": "Cut & Style Rapunzel",
+        "year": 2008,
+        "conditionpurchased": "Used (friend's childhood)",
+        "quantity": 1,
+        "manufacturer": "Mattel",
+        "notes": "Broken neck-filled with acryllic, needs to be reattached"
+    },
+    {
+        "id": 324,
+        "categoryshort": "barbie",
+        "category": "Barbie",
+        "name": "Cutie Reveal Jungle Series Elephant",
+        "year": 2022,
+        "conditionpurchased": "New",
+        "quantity": 1,
+        "manufacturer": "Mattel"
+    },
+    {
+        "id": 325,
+        "categoryshort": "barbie",
+        "category": "Barbie",
+        "name": "Looks #10",
+        "year": 2022,
+        "conditionpurchased": "New",
+        "quantity": 1,
+        "manufacturer": "Mattel"
+    },
+    {
+        "id": 326,
+        "categoryshort": "rh",
+        "category": "Rainbow High",
+        "name": "Rainbow Vision The Royal Three Tiara Song",
+        "year": 2022,
+        "condition": "New",
+        "quantity": 1,
+        "manufacturer": "MGA Entertainment"
     }
 ]
