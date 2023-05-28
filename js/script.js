@@ -92,9 +92,25 @@ var displaySearch = function(searchCategoryInput, searchNameInput,searchYearInpu
 					var data = res.responseText;
 					//console.log(data);
 					var dataArr = JSON.parse(data);
+					dataArr = dataArr.sort((a, b) => {
+						if (a.year == b.year) {
+							if (a.name>b.name) {
+								return 1;
+							}
+							else if (a.name<b.name) {
+								return -1;
+							}
+							else {
+								return 0;
+							}
+						}
+						else {
+							return a.year-b.year;
+						}
+						
+					});
+					console.log(dataArr);
 					onDisplay = [];
-					console.log(searchYear);
-					console.log(searchYearInput);
 					searchingLabel = "<div id=\"searchingLabelBox1\"> Search for:";
 					if (searchCategory != "") {
 						searchingLabel += "<span class=\"searchingLabel\">" + searchCategory + "</span>";
@@ -128,6 +144,7 @@ var displaySearch = function(searchCategoryInput, searchNameInput,searchYearInpu
 						}
 					}
 					console.log(onDisplay);
+
 					document.getElementById("body")
 					.innerHTML = searchingLabel + toBody;
 					callback();
@@ -156,9 +173,7 @@ var clickableDolls = function() {
 			var dataArr = JSON.parse(data);
 			for (var i=0; i<dataArr.length; i++) {
 				if (onDisplay.includes(dataArr[i].id)) {
-					console.log("yay");
 					idToSend = dataArr[i].id;
-					console.log(idToSend);
 					document.getElementById(dataArr[i].id.toString()).addEventListener("click",(hit)=>displayIdPage(hit.target.id));
 				}
 			};
