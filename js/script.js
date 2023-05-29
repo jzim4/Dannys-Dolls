@@ -128,14 +128,16 @@ var displaySearch = function(searchCategoryInput, searchNameInput,searchYearInpu
 						searchingLabel += "<span class=\"searchingLabel\">" + searchManufacturer + "</span>";
 					}
 					searchingLabel += "</div>";
+
 					for (var i=0; i<dataArr.length; i++) {
+						console.log(dataArr[i]);
 						if (dataArr[i].year.toString().includes("present")) {
 							dollYear = dataArr[i].year.toString().replace("present","3000");
 						}
 						else {
 							dollYear = dataArr[i].year.toString();
 						}
-						if ((dataArr[i].category.includes(searchCategory) || searchCategory == "") && (dataArr[i].name.includes(searchName) || searchName == "") && (dollYear.includes(searchYear) || (parseInt(dollYear.substr(0,4)) < searchYear && parseInt(dollYear.substr(5,9)) > searchYear) || searchYear == "") && (dataArr[i].conditionpurchased.includes(searchCondition) || searchCondition == "") && (searchManufacturer == dataArr[i].manufacturer || searchManufacturer == "")) {
+						if ((searchCategory == "" || dataArr[i].category == searchCategory) && (searchName == "" || dataArr[i].name == searchName) && (searchYear == "" || dollYear == searchYear || (parseInt(dollYear.substr(0,4)) < searchYear && parseInt(dollYear.substr(5,9)) > searchYear)) && (searchCondition == "" || dataArr[i].conditionpurchased == searchCondition) && (searchManufacturer == "" || searchManufacturer == dataArr[i].manufacturer)) {
 							onDisplay.push(dataArr[i].id);
 							var prepareToBody = insertProperty(html,"categoryshort",dataArr[i].categoryshort);
 							var prepareToBody1 = insertProperty(prepareToBody,"id",dataArr[i].id);
