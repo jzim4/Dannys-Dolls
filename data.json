@@ -160,7 +160,7 @@
         "conditionpurchased": "Used",
         "quantity": 1,
         "manufacturer": "Mattel",
-        "notes": "Broken Neck, filled with acrylic, needs head reattached"
+        "notes": "Broken Neck, filled with acrylic, and head was reattached"
     },
     {
         "id": 17,
@@ -262,7 +262,7 @@
         "conditionpurchased": "Boxed",
         "quantity": 1,
         "manufacturer": "Mattel",
-        "notes": "Broken Arm-Fixed"
+        "notes": "Broken Arm-Fixed, then broken again"
     },
     {
         "id": 27,
@@ -713,7 +713,8 @@
         "year": 2007,
         "conditionpurchased": "Childhood",
         "quantity": 1,
-        "manufacturer": "MGA Entertainment"
+        "manufacturer": "MGA Entertainment",
+        "notes": "Wearing Rock Angelz Sasha's second outfit with 20th anniversary Jade's shoes"
     },
     {
         "id": 72,
@@ -723,7 +724,8 @@
         "year": 2008,
         "conditionpurchased": "Childhood",
         "quantity": 1,
-        "manufacturer": "MGA Entertainment"
+        "manufacturer": "MGA Entertainment",
+        "notes": "Wearing Kumi's second outfit"
     },
     {
         "id": 73,

@@ -463,6 +463,8 @@ input[type="file"] {
 @media (max-width:424px) {
   .categoryBox {
     padding: 5px;
+    width: 50%;
+    float: left;
   }
   #searchingLabelBox1, #searchingLabelBox2 {
     margin: 15px;
