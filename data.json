@@ -1851,8 +1851,9 @@
         "name": "Skull Shores Draculaura",
         "year": 2011,
         "conditionpurchased": "Childhood",
-        "quantity": 1,
-        "manufacturer": "Mattel"
+        "quantity": 2,
+        "manufacturer": "Mattel",
+        "notes": "One needs to be cleaned"
     },
     {
         "id": 185,
@@ -3554,16 +3555,6 @@
         "categoryshort": "mh",
         "category": "Monster High",
         "name": "Sweet 1600 Draculaura",
-        "year": 2011,
-        "conditionpurchased": "Childhood",
-        "quantity": 1,
-        "manufacturer": "Mattel"
-    },
-    {
-        "id": 355,
-        "categoryshort": "mh",
-        "category": "Monster High",
-        "name": "Skull Shores Draculaura",
         "year": 2011,
         "conditionpurchased": "Childhood",
         "quantity": 1,
