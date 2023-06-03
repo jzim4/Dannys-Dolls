@@ -179,7 +179,6 @@ var displayDollSearch = function(searchCategoryInput, searchNameInput,searchYear
 			document.getElementById("body")
 			.innerHTML = searchingLabel + toBody;
 			callback();
-
 		});
 	}
 
@@ -236,7 +235,6 @@ var displayClothesSearch = function(searchNameInput, searchLineInput,searchChara
 		});
 	}
 
-
 var runDollSearchInput = function() {
 	document.getElementById("submitDollSearch").addEventListener("click", () => {
 		searchBrand = document.getElementById("inputBrand").value;
@@ -266,22 +264,25 @@ var clickableDolls = function() {
 	for (var i=0; i<dataArrDolls.length; i++) {
 		if (onDisplay.includes(dataArrDolls[i].id)) {
 			idToSend = dataArrDolls[i].id;
-			document.getElementById(dataArrDolls[i].id.toString()).addEventListener("click",(hit)=>displayIdPage(hit.target.id));
+			document.getElementById(dataArrDolls[i].id.toString()).addEventListener("click",(hit)=>displayDollIdPage(hit.target.id));
 		}
 	};
+	window.scrollTo(0,0);
 }
 var clickableClothes = function() {
 	for (var i=0; i<dataArrClothes.length; i++) {
 		if (onDisplay.includes(dataArrClothes[i].id)) {
 			idToSend = dataArrClothes[i].id;
-			document.getElementById(dataArrClothes[i].id.toString()).addEventListener("click",(hit)=>displayIdPage(hit.target.id));
+			document.getElementById(dataArrClothes[i].id.toString()).addEventListener("click",(hit)=>displayClothesIdPage(hit.target.id));
 		}
 	};
+	window.scrollTo(0,0);
 }
-var displayIdPage = function(dollId) {
+var displayDollIdPage = function(dollId) {
+	window.scrollTo(0,0);
 	var toBody = "";
 	var html;
-	$ajaxUtils.sendGetRequest("../Dannys-Dolls/snippets/idSnippet.html", true,
+	$ajaxUtils.sendGetRequest("../Dannys-Dolls/snippets/idDollSnippet.html", true,
 		function(res) {
 			html = res.responseText;
 			for (var i=0; i<dataArrDolls.length; i++) {
@@ -292,7 +293,6 @@ var displayIdPage = function(dollId) {
 					break;
 				}
 			}
-			var data = res.responseText;
 			var prepareToBody = insertProperty(html,"categoryshort",doll.categoryshort);
 			var prepareToBody1 = insertProperty(prepareToBody,"id",doll.id);
 			var prepareToBody2 = insertProperty(prepareToBody1,"name",doll.name);
@@ -315,6 +315,45 @@ var displayIdPage = function(dollId) {
 
 			document.getElementById("searchingLabelBox2").addEventListener("click",() =>
 				displayDollSearch(searchCategory, searchName,searchYear,searchCondition,searchManufacturer,clickableDolls));
+		});
+}
+var displayClothesIdPage = function(clothesId) {
+	window.scrollTo(0,0);
+	var toBody = "";
+	var html;
+	$ajaxUtils.sendGetRequest("../Dannys-Dolls/snippets/idClothesSnippet.html", true,
+		function(res) {
+			html = res.responseText;
+			for (var i=0; i<dataArrClothes.length; i++) {
+				if (dataArrClothes[i].id == clothesId) {
+					var clothes = dataArrClothes[i];
+					console.log(clothesId);
+					console.log(clothesId);
+					break;
+				}
+			}
+			var prepareToBody = insertProperty(html,"id",clothes.id);
+			var prepareToBody1 = insertProperty(prepareToBody,"name",clothes.name);
+			var prepareToBody2 = insertProperty(prepareToBody1,"line",clothes.line);
+			var prepareToBody3 = insertProperty(prepareToBody2,"character",clothes.character);
+			var prepareToBody4 = insertProperty(prepareToBody3,"year",clothes.year);
+			var prepareToBody5 = insertProperty(prepareToBody4,"quantity",clothes.quantity);
+			var prepareToBody6 = insertProperty(prepareToBody5,"complete",clothes.complete);
+			if (clothes.hasOwnProperty("notes")) {
+				var prepareToBody7 = insertProperty(prepareToBody6,"notes",clothes.notes);
+			}
+			else {
+				var prepareToBody7 = prepareToBody6.replace("<div id = \"idNotes\" class=\"idInfoLine\">Notes: {{notes}}</div>","");
+			}
+	
+			toBody += prepareToBody7;
+			searchingLabel = searchingLabel.replace("Search", "Return to search");
+			searchingLabel = searchingLabel.replace("1", "2");
+			document.getElementById("body")
+			.innerHTML = searchingLabel + toBody;
+
+			document.getElementById("searchingLabelBox2").addEventListener("click",() =>
+				displayClothesSearch(searchClothesName, searchClothesLine,searchClothesCharacter,searchClothesYear,clickableClothes));
 		});
 }
 
