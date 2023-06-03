@@ -19,13 +19,13 @@
 
 	//attached to ajaxUtils, so will be visible
 	ajaxUtils.sendGetRequest = 
-		function(requestUrl, responseHandler) {
+		function(requestUrl, sync, responseHandler) {
 			var request = getRequestObject();
 			request.onreadystatechange =
 				function() {
 					handleResponse(request,responseHandler);
 				};
-			request.open("GET",requestUrl,true); //true means let it be asynchronous, you want that
+			request.open("GET",requestUrl,sync); //true means let it be asynchronous
 			request.send(null); //for POST only
 		};
 

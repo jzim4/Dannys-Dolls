@@ -5,11 +5,9 @@
 */
 
 /* TO DO: 
-  - ADD "CATEGORY" CATEGORY AND INSTRUCTIONS TO SEARCH BOX
-  - SAVE IMAGES DANNY HAS GIVEN ME WITH APPROPRIATE ID'S
-  - MAKE SEARCH PAGES SHOW WHAT IS BEING SEARCHED FOR AND MAKE THEM CLICKABLE TO GO BACKWARDS
   - MAKE EDIT PAGE ACTUALLY ADD SOMETHING
   - MAKE FORMATTING EXPLAINING SEARCH MAKE MORE SENSE
+  - MAKE IT JUST INCLUDES INSTEAD OF == FOR SEARCH
 */
 
 
@@ -180,6 +178,10 @@ h1 {
   padding: 20px;
   padding-bottom: 62px;
 }
+#searchLine {
+  float: left;
+  width: 100%;
+}
 .searchLabel {
   margin-bottom: 3px;
 }
@@ -200,32 +202,33 @@ h1 {
   border-radius: 8px;
   padding: 8px;
 }
-#submitSearch {
+#submitDollSearch, #submitClothesSearch {
   right: 20px;
   bottom: 15px;
 }
-#cancelSearch {
+#cancelDollSearch, #cancelClothesSearch {
   right: 128px;
   bottom: 15px;
+}
+.searchHeader {
+  padding: 3px;
+  text-decoration: underline;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 .searchButtons:hover {
   background-color: #a570e8;
   cursor: pointer;
 }
-@media (min-width: 1024px) {
-  #search {
-    width: 502px;
+@media (min-width: 992px) {
+  #searchLine {
+    display: none;
   }
 }
-@media (max-width: 1023px) and (min-width:769px) {
-  #search {
-    width: 375px;
-  }
 }
-@media (max-width: 768px) {
-  #search {
-    right: 0;
-    width: 100%;
+@media (max-width: 991px) {
+  #searchLine {
+    display: visible;
   }
 }
 
