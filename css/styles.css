@@ -519,16 +519,24 @@ input[type="file"] {
 }
 
 /* ID PAGE */
-.idImgBox {
+.idInfoBox {
   margin-left: auto;
   margin-right: auto;
   width: 300px;
 }
+#idImgBox {
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+}
+@media (max-width: 768px) {
+  #idImgBox {
+    width: 300px;
+  }
+}
 .idImg {
   border: 1px solid #4c2e74;
-  height: 0;
-  width:100%;
-  padding-bottom: 133.3%;
+  margin: 5px;
 }
 .idInfo {
   padding-top: 7px;

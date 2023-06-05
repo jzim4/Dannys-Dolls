@@ -293,8 +293,25 @@ var displayDollIdPage = function(dollId) {
 					break;
 				}
 			}
-			var prepareToBody = insertProperty(html,"categoryshort",doll.categoryshort);
-			var prepareToBody1 = insertProperty(prepareToBody,"id",doll.id);
+			var widthClass = "col-lg-12 col-md-12 col-sm-12 col-xs-12";
+			var img = var img = "<img class=\"idImg\" src=\"../Dannys-Dolls/images/{{categoryshort}}/" + doll.id.toString() + ".jpeg\"></img>";
+			console.log($ajaxUtils.doesFileExist("../Dannys-Dolls/images/" + doll.categoryshort + "/" + doll.id.toString()+"a.jpeg"));
+			if ($ajaxUtils.doesFileExist("../Dannys-Dolls/images/" + doll.categoryshort + "/" + doll.id.toString()+"b.jpeg")) {
+				img += "<img class=\"idImg\" src=\"../Dannys-Dolls/images/{{categoryshort}}/" + doll.id.toString() + "b" + ".jpeg\"></img>";
+				widthClass = "col-lg-6 col-md-6 col-sm-12 col-xs-12";
+			}
+			if ($ajaxUtils.doesFileExist("../Dannys-Dolls/images/" + doll.categoryshort + "/" + doll.id.toString()+"c.jpeg")) {
+				img += "<img class=\"idImg\" src=\"../Dannys-Dolls/images/{{categoryshort}}/" + doll.id.toString() + "c" + ".jpeg\"></img>";
+				widthClass = "col-lg-4 col-md-4 col-sm-12 col-xs-12";
+			}
+			if ($ajaxUtils.doesFileExist("../Dannys-Dolls/images/" + doll.categoryshort + "/" + doll.id.toString()+"d.jpeg")) {
+				img += "<img class=\"idImg\" src=\"../Dannys-Dolls/images/{{categoryshort}}/" + doll.id.toString() + "d" + ".jpeg\"></img>";
+				widthClass = "col-lg-3 col-md-6 col-sm-12 col-xs-12";
+			}
+
+			var prepareToBody = insertProperty(html,"img",img);
+			var prepareToBody = insertProperty(prepareToBody,"width",widthClass);
+			var prepareToBody1 = insertProperty(prepareToBody,"categoryshort",doll.categoryshort);
 			var prepareToBody2 = insertProperty(prepareToBody1,"name",doll.name);
 			var prepareToBody3 = insertProperty(prepareToBody2,"year",doll.year);
 			var prepareToBody4 = insertProperty(prepareToBody3,"conditionpurchased",doll.conditionpurchased);
@@ -312,6 +329,10 @@ var displayDollIdPage = function(dollId) {
 			searchingLabel = searchingLabel.replace("1", "2");
 			document.getElementById("body")
 			.innerHTML = searchingLabel + toBody;
+
+			console.log(document.getElementsByClassName("idImg").style);
+			//document.getElementsByClassName("idImg").style.setProperty('--width', width + "%");
+
 
 			document.getElementById("searchingLabelBox2").addEventListener("click",() =>
 				displayDollSearch(searchCategory, searchName,searchYear,searchCondition,searchManufacturer,clickableDolls));
