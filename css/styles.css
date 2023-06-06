@@ -529,12 +529,17 @@ input[type="file"] {
   margin-right: auto;
   width: fit-content;
 }
+@media (min-width: 769px) and (max-width: 935px) {
+  .idImg2 {
+    width: 32%;
+  }
+}
 @media (max-width: 768px) {
   #idImgBox {
     width: 300px;
   }
 }
-.idImg {
+.idImg, .idImg2 {
   border: 1px solid #4c2e74;
   margin: 5px;
 }

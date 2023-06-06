@@ -294,19 +294,15 @@ var displayDollIdPage = function(dollId) {
 				}
 			}
 			var widthClass = "col-lg-12 col-md-12 col-sm-12 col-xs-12";
-			var img = var img = "<img class=\"idImg\" src=\"../Dannys-Dolls/images/{{categoryshort}}/" + doll.id.toString() + ".jpeg\"></img>";
+			var img = "<img class=\"idImg\" src=\"../Dannys-Dolls/images/{{categoryshort}}/" + doll.id.toString() + ".jpeg\"></img>";
 			console.log($ajaxUtils.doesFileExist("../Dannys-Dolls/images/" + doll.categoryshort + "/" + doll.id.toString()+"a.jpeg"));
 			if ($ajaxUtils.doesFileExist("../Dannys-Dolls/images/" + doll.categoryshort + "/" + doll.id.toString()+"b.jpeg")) {
 				img += "<img class=\"idImg\" src=\"../Dannys-Dolls/images/{{categoryshort}}/" + doll.id.toString() + "b" + ".jpeg\"></img>";
 				widthClass = "col-lg-6 col-md-6 col-sm-12 col-xs-12";
 			}
 			if ($ajaxUtils.doesFileExist("../Dannys-Dolls/images/" + doll.categoryshort + "/" + doll.id.toString()+"c.jpeg")) {
-				img += "<img class=\"idImg\" src=\"../Dannys-Dolls/images/{{categoryshort}}/" + doll.id.toString() + "c" + ".jpeg\"></img>";
+				img = "<img class=\"idImg2\" src=\"../Dannys-Dolls/images/{{categoryshort}}/" + doll.id.toString() + ".jpeg\"></img><img class=\"idImg2\" src=\"../Dannys-Dolls/images/{{categoryshort}}/" + doll.id.toString() + "b" + ".jpeg\"></img><img class=\"idImg2\" src=\"../Dannys-Dolls/images/{{categoryshort}}/" + doll.id.toString() + "c" + ".jpeg\"></img>";
 				widthClass = "col-lg-4 col-md-4 col-sm-12 col-xs-12";
-			}
-			if ($ajaxUtils.doesFileExist("../Dannys-Dolls/images/" + doll.categoryshort + "/" + doll.id.toString()+"d.jpeg")) {
-				img += "<img class=\"idImg\" src=\"../Dannys-Dolls/images/{{categoryshort}}/" + doll.id.toString() + "d" + ".jpeg\"></img>";
-				widthClass = "col-lg-3 col-md-6 col-sm-12 col-xs-12";
 			}
 
 			var prepareToBody = insertProperty(html,"img",img);
@@ -353,7 +349,22 @@ var displayClothesIdPage = function(clothesId) {
 					break;
 				}
 			}
-			var prepareToBody = insertProperty(html,"id",clothes.id);
+
+
+			var widthClass = "col-lg-12 col-md-12 col-sm-12 col-xs-12";
+			var img = "<img class=\"idImg\" src=\"../Dannys-Dolls/images/{{categoryshort}}/" + clothes.id.toString() + ".jpeg\"></img>";
+			console.log($ajaxUtils.doesFileExist("../Dannys-Dolls/images/" + clothes.categoryshort + "/" + clothes.id.toString()+"a.jpeg"));
+			if ($ajaxUtils.doesFileExist("../Dannys-Dolls/images/clothes/" + clothes.id.toString()+"b.jpeg")) {
+				img += "<img class=\"idImg\" src=\"../Dannys-Dolls/images/clothes/" + clothes.id.toString() + "b" + ".jpeg\"></img>";
+				widthClass = "col-lg-6 col-md-6 col-sm-12 col-xs-12";
+			}
+			if ($ajaxUtils.doesFileExist("../Dannys-Dolls/images/clothes/" + clothes.id.toString()+"c.jpeg")) {
+				img = "<img class=\"idImg2\" src=\"../Dannys-Dolls/images/clothes/" + clothes.id.toString() + ".jpeg\"></img><img class=\"idImg2\" src=\"../Dannys-Dolls/images/clothes/" + clothes.id.toString() + "b" + ".jpeg\"></img><img class=\"idImg2\" src=\"../Dannys-Dolls/images/clothes/" + clothes.id.toString() + "c" + ".jpeg\"></img>";
+				widthClass = "col-lg-4 col-md-4 col-sm-12 col-xs-12";
+			}
+
+			var prepareToBody = insertProperty(html,"img",img);
+			var prepareToBody = insertProperty(prepareToBody,"width",widthClass);
 			var prepareToBody1 = insertProperty(prepareToBody,"name",clothes.name);
 			var prepareToBody2 = insertProperty(prepareToBody1,"line",clothes.line);
 			var prepareToBody3 = insertProperty(prepareToBody2,"character",clothes.character);
@@ -364,7 +375,7 @@ var displayClothesIdPage = function(clothesId) {
 				var prepareToBody7 = insertProperty(prepareToBody6,"notes",clothes.notes);
 			}
 			else {
-				var prepareToBody7 = prepareToBody6.replace("<div id = \"idNotes\" class=\"idInfoLine\">Notes: {{notes}}</div>","");
+				var prepareToBody7 = prepareToBody6.replace("<div class=\"idInfoLine\">Notes: {{notes}}</div>","");
 			}
 	
 			toBody += prepareToBody7;

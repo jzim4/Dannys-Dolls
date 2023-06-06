@@ -35,7 +35,7 @@
         "id": 4,
         "categoryshort": "barbie",
         "category": "Barbie",
-        "name": "Holiday Barbie 1988",
+        "name": "Happy Holidays Barbie 1988",
         "year": 1988,
         "conditionpurchased": "Used",
         "quantity": 1,
@@ -1657,7 +1657,7 @@
         "categoryshort": "mh",
         "category": "Monster High",
         "name": "(G1) Core Clawdeen Wolf",
-        "year": 2010,
+        "year": 2009,
         "conditionpurchased": "Childhood",
         "quantity": 1,
         "manufacturer": "Mattel"
@@ -1667,7 +1667,7 @@
         "categoryshort": "mh",
         "category": "Monster High",
         "name": "(G1) Core Deuce Gorgon",
-        "year": 2010,
+        "year": 2009,
         "conditionpurchased": "Childhood",
         "quantity": 1,
         "manufacturer": "Mattel",
@@ -1688,7 +1688,7 @@
         "categoryshort": "mh",
         "category": "Monster High",
         "name": "Dead Tired Lagoona Blue",
-        "year": 2011,
+        "year": 2010,
         "conditionpurchased": "Childhood",
         "quantity": 2,
         "manufacturer": "Mattel"
@@ -1698,7 +1698,7 @@
         "categoryshort": "mh",
         "category": "Monster High",
         "name": "Coffin Bean Clawdeen Wolf",
-        "year": 2012,
+        "year": 2011,
         "conditionpurchased": "Childhood",
         "quantity": 1,
         "manufacturer": "Mattel"
@@ -1769,7 +1769,7 @@
         "categoryshort": "mh",
         "category": "Monster High",
         "name": "I Heart Fashion Frankie Stein",
-        "year": 2012,
+        "year": 2011,
         "conditionpurchased": "Childhood",
         "quantity": 1,
         "manufacturer": "Mattel"
@@ -1819,7 +1819,7 @@
         "categoryshort": "mh",
         "category": "Monster High",
         "name": "Sisters Clawdeen Wolf",
-        "year": 2012,
+        "year": 2011,
         "conditionpurchased": "Childhood",
         "quantity": 1,
         "manufacturer": "Mattel"
@@ -1829,7 +1829,7 @@
         "categoryshort": "mh",
         "category": "Monster High",
         "name": "Sisters Howleen Wolf",
-        "year": 2012,
+        "year": 2011,
         "conditionpurchased": "Childhood",
         "quantity": 1,
         "manufacturer": "Mattel"
@@ -1890,7 +1890,7 @@
         "categoryshort": "mh",
         "category": "Monster High",
         "name": "Classroom Cleo De Nile",
-        "year": 2013,
+        "year": 2012,
         "conditionpurchased": "Childhood",
         "quantity": 1,
         "manufacturer": "Mattel"
@@ -1900,7 +1900,7 @@
         "categoryshort": "mh",
         "category": "Monster High",
         "name": "(G1) Core Headless Headmistress Bloodgood",
-        "year": 2013,
+        "year": 2012,
         "conditionpurchased": "Childhood",
         "quantity": 1,
         "manufacturer": "Mattel"
@@ -2010,7 +2010,7 @@
         "categoryshort": "mh",
         "category": "Monster High",
         "name": "Boo York Boo York Gala Ghouls Mouscedes King",
-        "year": 2015,
+        "year": 2014,
         "conditionpurchased": "Used",
         "quantity": 1,
         "manufacturer": "Mattel"
@@ -2030,7 +2030,7 @@
         "categoryshort": "mh",
         "category": "Monster High",
         "name": "Boo-Riginal Creeproduction Clawdeen Wolf",
-        "year": 2022,
+        "year": 2021,
         "conditionpurchased": "New",
         "quantity": 1,
         "manufacturer": "Mattel"
@@ -2040,7 +2040,7 @@
         "categoryshort": "mh",
         "category": "Monster High",
         "name": "Boo-Riginal Creeproduction Frankie Stein",
-        "year": 2022,
+        "year": 2021,
         "conditionpurchased": "New",
         "quantity": 1,
         "manufacturer": "Mattel"
@@ -3869,5 +3869,67 @@
         "conditionpurchased": "New",
         "quantity": 1,
         "manufacturer": "Mattel"
+    },
+    {
+        "id": 387,
+        "categoryshort": "lol",
+        "category": "LOL Surprise (entire franchise)",
+        "name": "OMG Sunshine Makeover Sunrise",
+        "year": 2022,
+        "conditionpurchased": "New",
+        "quantity": 1,
+        "manufacturer": "MGA Entertainment"
+    },
+    {
+        "id": 388,
+        "categoryshort": "lol",
+        "category": "LOL Surprise (entire franchise)",
+        "name": "OMG Series 7 Western Cutie",
+        "year": 2022,
+        "conditionpurchased": "New",
+        "quantity": 1,
+        "manufacturer": "MGA Entertainment"
+    },
+    {
+        "id": 389,
+        "categoryshort": "barbie",
+        "category": "Barbie",
+        "name": "Chelsea Cutie Reveal Jungle Series Monkey",
+        "year": 2022,
+        "conditionpurchased": "New",
+        "quantity": 1,
+        "manufacturer": "Mattel"
+    },
+    {
+        "id": 390,
+        "categoryshort": "barbie",
+        "category": "Barbie",
+        "name": "Barbie The Movie Barbie in Gingham Dress",
+        "year": 2022,
+        "conditionpurchased": "New",
+        "quantity": 1,
+        "manufacturer": "Mattel"
+    },
+    {
+        "id": 391,
+        "categoryshort": "misc",
+        "category": "Miscellaneous",
+        "name": "Cry Babies BFF Series 2 Hannah",
+        "year": 2023,
+        "conditionpurchased": "New",
+        "quantity": 1,
+        "manufacturer": "IMC Toys",
+        "notes": "Does not have a box date so I went by release date"
+    },
+    {
+        "id": 392,
+        "categoryshort": "misc",
+        "category": "Miscellaneous",
+        "name": "Cry Babies BFF Series 2 Jassy",
+        "year": 2023,
+        "conditionpurchased": "New",
+        "quantity": 1,
+        "manufacturer": "IMC Toys",
+        "notes": "Does not have a box date so I went by release date"
     }
 ]
