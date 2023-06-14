@@ -217,7 +217,7 @@
         "id": 22,
         "categoryshort": "barbie",
         "category": "Barbie",
-        "name": "Holiday Barbie 2000",
+        "name": "Celebration Barbie",
         "year": 2000,
         "conditionpurchased": "Boxed",
         "quantity": 1,
@@ -2204,7 +2204,7 @@
         "conditionpurchased": "Used",
         "quantity": 1,
         "manufacturer": "Mattel",
-        "notes": "Needs to be restrung"
+        "notes": "Needs to be restrung. Wearing the wrong outfit."
     },
     {
         "id": 220,
@@ -3512,13 +3512,13 @@
     },
     {
         "id": 350,
-        "categoryshort": "barbie",
-        "category": "Barbie",
-        "name": "Big Brother Ken and Little Brother Tommy Tommy",
-        "year": 1996,
-        "conditionpurchased": "Used (friend's childhood)",
+        "categoryshort": "bratz",
+        "category": "Bratz",
+        "name": "Cult Gaia Yasmin",
+        "year": 2022,
+        "conditionpurchased": "New",
         "quantity": 1,
-        "manufacturer": "Mattel"
+        "manufacturer": "MGA Entertainment"
     },
     {
         "id": 351,
