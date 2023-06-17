@@ -69,11 +69,11 @@ var searchButtonOpener = function (callback1,callback2) {
 }
 var onDisplay = new Array();
 var searchingLabel;
-var searchCategory;
-var searchName;
-var searchYear;
-var searchCondition;
-var searchManufacturer;
+var searchCategory="";
+var searchName="";
+var searchYear="";
+var searchCondition="";
+var searchManufacturer="";
 var dataArrDolls;
 $ajaxUtils.sendGetRequest("../Dannys-Dolls/dolls.json",false, function(res) {
 	var data = res.responseText;
@@ -98,10 +98,10 @@ $ajaxUtils.sendGetRequest("../Dannys-Dolls/dolls.json",false, function(res) {
 	});
 });
 
-var searchClothesName;
-var searchClothesLine;
-var searchClothesCharacter;
-var searchClothesYear;
+var searchClothesName="";
+var searchClothesLine="";
+var searchClothesCharacter="";
+var searchClothesYear="";
 var dataArrClothes;
 $ajaxUtils.sendGetRequest("../Dannys-Dolls/clothes.json",false, function(res) {
 	var data = res.responseText;
@@ -243,7 +243,7 @@ var runDollSearchInput = function() {
 		searchCondition = document.getElementById("inputCondition").value;
 		searchManufacturer = document.getElementById("inputManufacturer").value;
 
-		displayDollSearch(searchBrand, searchName,searchYear,searchCondition,searchManufacturer,clickableClothes);
+		displayDollSearch(searchBrand, searchName,searchYear,searchCondition,searchManufacturer,clickableDolls);
 		document.getElementById("search").innerHTML = "";
 	});
 }
@@ -261,9 +261,11 @@ var runClothesSearchInput = function() {
 }
 // DISPLAYING DOLLS //
 var clickableDolls = function() {
+	console.log(onDisplay);
 	for (var i=0; i<dataArrDolls.length; i++) {
 		if (onDisplay.includes(dataArrDolls[i].id)) {
 			idToSend = dataArrDolls[i].id;
+
 			document.getElementById(dataArrDolls[i].id.toString()).addEventListener("click",(hit)=>displayDollIdPage(hit.target.id));
 		}
 	};
@@ -352,7 +354,7 @@ var displayClothesIdPage = function(clothesId) {
 
 
 			var widthClass = "col-lg-12 col-md-12 col-sm-12 col-xs-12";
-			var img = "<img class=\"idImg\" src=\"../Dannys-Dolls/images/{{categoryshort}}/" + clothes.id.toString() + ".jpeg\"></img>";
+			var img = "<img class=\"idImg\" src=\"../Dannys-Dolls/images/clothes/" + clothes.id.toString() + ".jpeg\"></img>";
 			console.log($ajaxUtils.doesFileExist("../Dannys-Dolls/images/" + clothes.categoryshort + "/" + clothes.id.toString()+"a.jpeg"));
 			if ($ajaxUtils.doesFileExist("../Dannys-Dolls/images/clothes/" + clothes.id.toString()+"b.jpeg")) {
 				img += "<img class=\"idImg\" src=\"../Dannys-Dolls/images/clothes/" + clothes.id.toString() + "b" + ".jpeg\"></img>";
