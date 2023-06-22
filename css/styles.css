@@ -235,12 +235,9 @@ h1 {
 
 /* SIGN IN MENU */
 
-#signIn {
-/*  z-index:100;*/
-}
 #signInPage {
   color: white;
-  position: fixed;
+  position: absolute;
   right: 10px;
   background-color: rgb(76, 46, 116);
   font-size: 1.25em;
