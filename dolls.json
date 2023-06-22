@@ -352,7 +352,7 @@
         "categoryshort": "barbie",
         "category": "Barbie",
         "name": "Mini Kingdom 5 Quick Snap Fashions Princess Rosella",
-        "year": 2006,
+        "year": 2008,
         "conditionpurchased": "Childhood",
         "quantity": 1,
         "manufacturer": "Mattel"
@@ -3532,13 +3532,13 @@
     },
     {
         "id": 352,
-        "categoryshort": "disney",
-        "category": "Disney",
-        "name": "Hannah Montana In Concert Collection \"Best of Both Worlds\" Hannah Montana*",
-        "year": 2007,
-        "conditionpurchased": "Childhood",
+        "categoryshort": "",
+        "category": "",
+        "name": "",
+        "year": "",
+        "conditionpurchased": "",
         "quantity": 1,
-        "manufacturer": "Jakks Pacific"
+        "manufacturer": ""
     },
     {
         "id": 353,
@@ -3562,13 +3562,13 @@
     },
     {
         "id": 356,
-        "categoryshort": "mh",
-        "category": "Monster High",
-        "name": "Skull Shores Ghoulia Yelps",
-        "year": 2011,
-        "conditionpurchased": "Childhood",
-        "quantity": 2,
-        "manufacturer": "Mattel"
+        "categoryshort": "",
+        "category": "",
+        "name": "",
+        "year": "",
+        "conditionpurchased": "",
+        "quantity": 1,
+        "manufacturer": ""
     },
     {
         "id": 357,
@@ -3832,13 +3832,13 @@
     },
     {
         "id": 383,
-        "categoryshort": "mh",
-        "category": "Monster High",
-        "name": "(G1) Core Casta Fierce",
-        "year": 2014,
-        "conditionpurchased": "Childhood",
+        "categoryshort": "",
+        "category": "",
+        "name": "",
+        "year": "",
+        "conditionpurchased": "",
         "quantity": 1,
-        "manufacturer": "Mattel"
+        "manufacturer": ""
     },
     {
         "id": 384,

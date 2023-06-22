@@ -392,7 +392,7 @@ input[type="file"] {
 #editDollSubmit {
   position: absolute;
   --editDollSubmit: 0px;
-  bottom: calc(var(--editDollSubmit) + -50px);
+  bottom: calc(var(--editDollSubmit) + -55px);
 }
 #editClothesSubmit {
   position: absolute;

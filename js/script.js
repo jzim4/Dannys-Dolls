@@ -1,9 +1,3 @@
-var showLoading = function (selector) {
-	var html = "<div id='loadingIcon'>";
-		html += "<img src = '../Dannys-Dolls/images/other/load.gif'></div>";
-		document.querySelector(selector).innerHTML = html;
-	}
-
 var insertProperty = function (string, propName, propValue) {
 	var propToReplace = "{{" + propName + "}}";
 	string = string.replace(new RegExp(propToReplace, "g"), propValue);
@@ -12,6 +6,7 @@ var insertProperty = function (string, propName, propValue) {
 
 // CATEGORIES/HOME PAGE // 
 var categoriesOpener = function (callback) {
+	window.scrollTo(0,0);
 	$ajaxUtils
 		.sendGetRequest("../Dannys-Dolls/snippets/categoriesSnippet.html", true,
 			function(request) {
@@ -410,7 +405,6 @@ var signInButtonOpener = function (callback) {
 			}
 			
 		});
-		
 }
 document.addEventListener("click",(hit)=>console.log(hit.target.id));
 

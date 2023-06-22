@@ -42,9 +42,23 @@
 			request.send(null); //for POST only
 		};
 
-	//Only calls user provided 'responseHandler'
-		//function if response is ready and not an error
+	//I THINK THIS FUNCTION THAT I WROTE IS MAKING IT SO THAT THE NEW DOLL ISN'T WORKING. TBD
+	ajaxUtils.post = 
+		function(postUrl, postContent) {
+			var request = getRequestObject();
+			request.open("POST", postUrl, false);
+			request.setRequestHeader("Content-Type", "application/json");
+			console.log('request.readyState=',request.readyState);
+         	console.log('request.status=',request.status);
+			request.send(postContent);
+			console.log('request.readyState=',request.readyState);
+         	console.log('request.status=',request.status);
 
+         	//IS THE PROBLEM WITH A PERMISSION THING? TBD
+		}
+
+	//Only calls user provided 'responseHandler'
+	//function if response is ready and not an error
 	function handleResponse(request,responseHandler) {
 		if ((request.readyState==4) &&
 			(request.status==200)) {//200 relates to the status code OK 

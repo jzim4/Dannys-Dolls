@@ -1,4 +1,3 @@
-
 var signInButton = function(callback1, callback2) {
 	document.getElementById("submitSignIn").addEventListener("click", function() {
 		console.log(document.getElementById("signInInput").value);
@@ -83,49 +82,55 @@ var submitNewDoll = function() {
 			canSubmit = true;
 		}
 		//if (canSubmit == true) {
-		if (true) {
+		if (canSubmit==true) {
+			moveButtonDown = 0;
+			document.getElementById("submitDollError").style.setProperty('--submitDollError', moveButtonDown + "px");
+			document.getElementById("editDollSubmit").style.setProperty('--editDollSubmit', moveButtonDown + "px");
+			document.getElementById("addDoll").style.setProperty('--addDoll', moveButtonDown*(-1) + "px");
+			document.getElementById("submitDollError").innerHTML = "";
+			
+
+			//if dolls is a repeat
 			var correctRepeatInput;
 			if (document.getElementById("inputEditQuantity").value == 100) {
 				for (i in dataArrDolls) {
 					if (dataArrDolls[i].name == document.getElementById("inputEditName").value) {
 						correctRepeatInput = true;
+						dataArrDolls[i].quantity += 1;
 					}
 				}
+			}
+			if (document.getElementById("inputEditQuantity").value == 100 && correctRepeatInput == false) {
+				moveButtonDown -= 17;
+				document.getElementById("submitDollError").innerHTML += "<br>The name that you entered is not in the data. Check that you copied the name of the doll EXACTLY as it appears on the id page";
 			}
 			var ids = new Array();
 			for (i in dataArrDolls) {
 				ids.push(dataArrDolls[i].id);
 			}
-			var newId = 1;
-			var newIdFound = false;
-			while (!newIdFound) {
-				if (ids.includes(newId)) {
-					newId += 1;
-				}
-				else {
-					newIdFound = true;
-				}
-			}
-			if (correctRepeatInput == true) {
-				for (i in dataArrDolls) {
-					if (document.getElementById("inputEditName").value == dataArrDolls[i].name) {
-						dataArrDolls[i].quantity += 1;
-						break;
+
+			//if the doll is not a repeat
+			
+			if (correctRepeatInput == null) {
+				var newId = 1;
+				var newIdFound = false;
+				while (!newIdFound) {
+					if (ids.includes(newId)) {
+						newId += 1;
+					}
+					else {
+						newIdFound = true;
 					}
 				}
-			}
-			else if (correctRepeatInput == false) {
-				moveButtonDown -= 17;
-				document.getElementById("submitDollError").innerHTML += "<br>The name that you entered is not in the data. Check that you copied the name of the doll EXACTLY as it appears on the id page";
-			}
-			//if the doll is not a repeat
-			else if (correctRepeatInput == null) {
+
 				var newCategory = document.getElementById("inputEditCategory").value;
 				var newName = document.getElementById("inputEditName").value;
 				var newYear = document.getElementById("inputEditYear").value;
 				var newCondition = document.getElementById("inputEditCondition").value;
 				var newQuantity = document.getElementById("inputEditCondition").value;
+				var newManufacturer = document.getElementById("inputEditManufacturer").value;
 				var newShortCategory;
+
 				if (newCategory == "Barbie") {
 					newShortCategory = "barbie";
 				}
@@ -156,11 +161,39 @@ var submitNewDoll = function() {
 				var newImage = document.getElementById("inputEditDollImage").value;
 				console.log(newImage);
 
+				var clothesData; 
+				$ajaxUtils.sendGetRequest("../Dannys-Dolls/dolls.json", false, function(res) {
+					clothesData = res.responseText;
+				});
+				var newDoll = {
+			        "id": newId,
+			        "categoryshort": newShortCategory,
+			        "category": newCategory,
+			        "name": newName,
+			        "year": newYear,
+			        "conditionpurchased": newCondition,
+			        "quantity": newQuantity,
+			        "manufacturer": newManufacturer
+			    };
+			    
+			    clothesData = JSON.parse(clothesData);
+			    console.log(clothesData.length);
+			    clothesData.push(newDoll);
+			    console.log(clothesData.length);
+			    //clothesData = clothesData.toString();
 
+			    $ajaxUtils
+				.post("../Dannys-Dolls/dolls.json", clothesData);
+
+				$ajaxUtils.sendGetRequest("../Dannys-Dolls/dolls.json", false,
+					function(request) {
+						var newData = request.responseText;
+						newData = JSON.parse(newData);
+						console.log(newData.length);
+					});
 				//figure out how to write to folder to save image and write to json file to save new doll
 				//looks like i need nodejs. figure out what that is
 				//HOW THE FUCK DO I SAVE IMAGESSSSS
-				//TBH JUST MAKE THE SEARCH FUNCTION WORK AND CARRY ON
 
 
 
