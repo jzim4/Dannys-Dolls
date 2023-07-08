@@ -314,7 +314,7 @@ var displayDollIdPage = function(dollId) {
 				var prepareToBody7 = insertProperty(prepareToBody6,"notes",doll.notes);
 			}
 			else {
-				var prepareToBody7 = prepareToBody6.replace("<div id = \"idNotes\" class=\"idInfoLine\">Notes: {{notes}}</div>","");
+				var prepareToBody7 = prepareToBody6.replace("<div id = \"idNotes\" class=\"idInfoLine\">- Notes: {{notes}}</div>","");
 			}
 	
 			toBody += prepareToBody7;

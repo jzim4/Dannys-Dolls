@@ -537,14 +537,30 @@ input[type="file"] {
   margin: 5px;
 }
 .idInfo {
-  padding-top: 7px;
   line-height: 1.25;
 }
 .idInfoLine {
+  padding: 3px;
+  width: 100%;
+}
+#idName {
+  border: none;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+#idInfo {
+  border: solid 2px #4c2e74;
+  border-radius: 3px;
+  background-color: #e8d1f5;
+  padding: 3px;
+  margin-bottom: 8px;
+}
+#idDescr {
   border: solid 2px #4c2e74;
   border-radius: 3px;
   padding: 3px;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
 }
 
 /* CONTAINER */

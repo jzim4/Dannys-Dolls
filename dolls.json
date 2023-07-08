@@ -1700,7 +1700,8 @@
         "year": 2010,
         "conditionpurchased": "Childhood",
         "quantity": 1,
-        "manufacturer": "Mattel"
+        "manufacturer": "Mattel",
+        "notes": "The one on the left is wearing freak du chic Frankie's dress"
     },
     {
         "id": 168,
@@ -3551,13 +3552,13 @@
     },
     {
         "id": 352,
-        "categoryshort": "",
-        "category": "",
-        "name": "",
-        "year": "",
-        "conditionpurchased": "",
+        "categoryshort": "mh",
+        "category": "Monster High",
+        "name": "Haunt Couture Midnight Runway Cleo De Nile",
+        "year": 2022,
+        "conditionpurchased": "New",
         "quantity": 1,
-        "manufacturer": ""
+        "manufacturer": "Mattel"
     },
     {
         "id": 353,
@@ -3581,13 +3582,13 @@
     },
     {
         "id": 356,
-        "categoryshort": "",
-        "category": "",
-        "name": "",
-        "year": "",
-        "conditionpurchased": "",
+        "categoryshort": "mh",
+        "category": "Monster High",
+        "name": "(G1) Core Catty Noir",
+        "year": 2013,
+        "conditionpurchased": "Childhood",
         "quantity": 1,
-        "manufacturer": ""
+        "manufacturer": "Mattel"
     },
     {
         "id": 357,
@@ -3744,7 +3745,7 @@
         "categoryshort": "mh",
         "category": "Miscellaneous",
         "name": "Hershey Kisses",
-        "year": "Undated*",
+        "year": "Undated",
         "conditionpurchased": "Used (friend's childhood)",
         "quantity": 1,
         "manufacturer": "Hershey"
@@ -3843,7 +3844,7 @@
         "id": 382,
         "categoryshort": "mh",
         "category": "Monster High",
-        "name": "Inner Monster Shockingly Shy& Scared Silly",
+        "name": "Inner Monster Shockingly Shy & Scared Silly",
         "year": 2014,
         "conditionpurchased": "Childhood",
         "quantity": 1,
@@ -3851,13 +3852,13 @@
     },
     {
         "id": 383,
-        "categoryshort": "",
-        "category": "",
-        "name": "",
-        "year": "",
-        "conditionpurchased": "",
+        "categoryshort": "mh",
+        "category": "Monster High",
+        "name": "Dance Class Howleen Wolf",
+        "year": 2012,
+        "conditionpurchased": "Childhood",
         "quantity": 1,
-        "manufacturer": ""
+        "manufacturer": "Mattel"
     },
     {
         "id": 384,
@@ -3985,11 +3986,12 @@
         "id": 396,
         "categoryshort": "barbie",
         "category": "Barbie",
-        "name": "Beach Glam Barbie",
-        "year": 2006,
-        "conditionpurchased": "Childhood",
+        "name": "Cali Girl Barbie",
+        "year": 2003,
+        "conditionpurchased": "Used (friend's childhood)",
         "quantity": 1,
-        "manufacturer": "Mattel"
+        "manufacturer": "Mattel",
+        "notes": "Gift from Gideon"
     },
     {
         "id": 397,
@@ -4023,6 +4025,206 @@
         "quantity": 1,
         "manufacturer": "MGA Entertainment",
         "notes": "Reproduction of 2005 Wild Wild West Kiana"
+    },
+    {
+        "id": 400,
+        "categoryshort": "mh",
+        "category": "Monster High",
+        "name": "Ghoul Spirit Clawdeen Wolf",
+        "year": 2022,
+        "conditionpurchased": "New",
+        "quantity": 1,
+        "manufacturer": "Mattel"
+    },
+    {
+        "id": 401,
+        "categoryshort": "mh",
+        "category": "Monster High",
+        "name": "Ghoul Spirit Cleo De Nile",
+        "year": 2022,
+        "conditionpurchased": "New",
+        "quantity": 1,
+        "manufacturer": "Mattel"
+    },
+    {
+        "id": 402,
+        "categoryshort": "mh",
+        "category": "Monster High",
+        "name": "Ghoul Spirit Draculaura",
+        "year": 2022,
+        "conditionpurchased": "New",
+        "quantity": 1,
+        "manufacturer": "Mattel"
+    },
+    {
+        "id": 403,
+        "categoryshort": "mh",
+        "category": "Monster High",
+        "name": "Ghoul Spirit Toralei Stripe",
+        "year": 2022,
+        "conditionpurchased": "New",
+        "quantity": 1,
+        "manufacturer": "Mattel"
+    },
+    {
+        "id": 404,
+        "categoryshort": "mh",
+        "category": "Monster High",
+        "name": "Ghoul Spirit Frankie Stein",
+        "year": 2022,
+        "conditionpurchased": "New",
+        "quantity": 1,
+        "manufacturer": "Mattel"
+    },
+    {
+        "id": 405,
+        "categoryshort": "mh",
+        "category": "Monster High",
+        "name": "Ghoul Spirit Deuce Gorgon",
+        "year": 2022,
+        "conditionpurchased": "New",
+        "quantity": 1,
+        "manufacturer": "Mattel"
+    },
+    {
+        "id": 406,
+        "categoryshort": "mh",
+        "category": "Monster High",
+        "name": "Coffin Bean Clawdeen Wolf",
+        "year": 2011,
+        "conditionpurchased": "Childhood",
+        "quantity": 1,
+        "manufacturer": "Mattel"
+    },
+    {
+        "id": 407,
+        "categoryshort": "mh",
+        "category": "Monster High",
+        "name": "Howliday Love Edition Cleo De Nile",
+        "year": 2022,
+        "conditionpurchased": "New",
+        "quantity": 1,
+        "manufacturer": "Mattel"
+    },
+    {
+        "id": 408,
+        "categoryshort": "mh",
+        "category": "Monster High",
+        "name": "Howliday Love Edition Deuce Gorgon",
+        "year": 2022,
+        "conditionpurchased": "New",
+        "quantity": 1,
+        "manufacturer": "Mattel"
+    },
+    {
+        "id": 409,
+        "categoryshort": "mh",
+        "category": "Monster High",
+        "name": "Student Disembody Council Scarah Screams",
+        "year": 2014,
+        "conditionpurchased": "Childhood",
+        "quantity": 1,
+        "manufacturer": "Mattel"
+    },
+    {
+        "id": 410,
+        "categoryshort": "mh",
+        "category": "Monster High",
+        "name": "Monster Ball Cleo De Nile",
+        "year": 2022,
+        "conditionpurchased": "New",
+        "quantity": 1,
+        "manufacturer": "Mattel"
+    },
+    {
+        "id": 411,
+        "categoryshort": "mh",
+        "category": "Monster High",
+        "name": "Skulltimate Secrets Fear Idescent Cleo De Nile",
+        "year": 2022,
+        "conditionpurchased": "New",
+        "quantity": 1,
+        "manufacturer": "Mattel"
+    },
+    {
+        "id": 412,
+        "categoryshort": "mh",
+        "category": "Monster High",
+        "name": "Skull Shores Clawdeen Wolf",
+        "year": 2012,
+        "conditionpurchased": "Childhood",
+        "quantity": 1,
+        "manufacturer": "Mattel"
+    },
+    {
+        "id": 413,
+        "categoryshort": "mh",
+        "category": "Monster High",
+        "name": "Rainbow Vision The Royal Three Tessa Park",
+        "year": 2022,
+        "conditionpurchased": "Childhood",
+        "quantity": 1,
+        "manufacturer": "MGA Entertainment"
+    },
+    {
+        "id": 414,
+        "categoryshort": "lol",
+        "category": "LOL Surprise (entire franchise)",
+        "name": "LOL JK M.C. Swag",
+        "year": 2020,
+        "conditionpurchased": "New",
+        "quantity": 1,
+        "manufacturer": "Mattel"
+    },
+    {
+        "id": 415,
+        "categoryshort": "lol",
+        "category": "LOL Surprise (entire franchise)",
+        "name": "LOL JK Queen Bee",
+        "year": 2020,
+        "conditionpurchased": "New",
+        "quantity": 1,
+        "manufacturer": "Mattel"
+    },
+    {
+        "id": 416,
+        "categoryshort": "misc",
+        "category": "Miscellaneous",
+        "name": "Liv \"first edition\" Daniella",
+        "year": 2009,
+        "conditionpurchased": "Childhood",
+        "quantity": 1,
+        "manufacturer": "Spin Master"
+    },
+    {
+        "id": 417,
+        "categoryshort": "misc",
+        "category": "Miscellaneous",
+        "name": "Pinkie Cooper and the Jet Set Pets Pinkie in Paris",
+        "year": 2013,
+        "conditionpurchased": "Used",
+        "quantity": 1,
+        "manufacturer": "The Bridge Direct"
+    },
+    {
+        "id": 418,
+        "categoryshort": "misc",
+        "category": "Miscellaneous",
+        "name": "Polly Pocket Sparkle Stage Polly",
+        "year": 2021,
+        "conditionpurchased": "Used",
+        "quantity": 1,
+        "manufacturer": "Mattel"
+    },
+    {
+        "id": 419,
+        "categoryshort": "misc",
+        "category": "Miscellaneous",
+        "name": "Polly Pocket Sparkle Stage \"Shani\" Friend",
+        "year": 2021,
+        "conditionpurchased": "New",
+        "quantity": 1,
+        "manufacturer": "Mattel"
     }
 
 ]
