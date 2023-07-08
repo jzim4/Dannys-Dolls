@@ -3950,5 +3950,79 @@
         "quantity": 1,
         "manufacturer": "IMC Toys",
         "notes": "Does not have a box date so I went by release date"
+    },
+    {
+        "id": 393,
+        "categoryshort": "barbie",
+        "category": "Barbie",
+        "name": "Superstar Barbie",
+        "year": 2009,
+        "conditionpurchased": "Boxed",
+        "quantity": 1,
+        "manufacturer": "Mattel"
+    },
+    {
+        "id": 394,
+        "categoryshort": "barbie",
+        "category": "Barbie",
+        "name": "60th Anniversary Ken",
+        "year": 2020,
+        "conditionpurchased": "New",
+        "quantity": 2,
+        "manufacturer": "Mattel"
+    },
+    {
+        "id": 395,
+        "categoryshort": "barbie",
+        "category": "Barbie",
+        "name": "Gold Medal 1975 Reproduction",
+        "year": 2019,
+        "conditionpurchased": "New",
+        "quantity": 1,
+        "manufacturer": "Mattel"
+    },
+    {
+        "id": 396,
+        "categoryshort": "barbie",
+        "category": "Barbie",
+        "name": "Beach Glam Barbie",
+        "year": 2006,
+        "conditionpurchased": "Childhood",
+        "quantity": 1,
+        "manufacturer": "Mattel"
+    },
+    {
+        "id": 397,
+        "categoryshort": "barbie",
+        "category": "Barbie",
+        "name": "Western Barbie",
+        "year": 1980,
+        "conditionpurchased": "Used",
+        "quantity": 1,
+        "manufacturer": "Mattel",
+        "notes": "Cursed winking mechanic"
+    },
+    {
+        "id": 398,
+        "categoryshort": "bratz",
+        "category": "Bratz",
+        "name": "The Bratz Pack Nevra",
+        "year": 2022,
+        "conditionpurchased": "New",
+        "quantity": 1,
+        "manufacturer": "MGA Entertainment",
+        "notes": "Reproduction of 2003 Formal Funk Super-Stylin' Runway Disco Nevra"
+    },
+    {
+        "id": 399,
+        "categoryshort": "bratz",
+        "category": "Bratz",
+        "name": "The Bratz Pack Kiana",
+        "year": 2022,
+        "conditionpurchased": "New",
+        "quantity": 1,
+        "manufacturer": "MGA Entertainment",
+        "notes": "Reproduction of 2005 Wild Wild West Kiana"
     }
+
 ]
