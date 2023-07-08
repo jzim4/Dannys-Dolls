@@ -73,11 +73,11 @@ var submitNewDoll = function() {
 			moveButtonDown -= 17;
 			document.getElementById("submitDollError").innerHTML += "<br>You haven't entered the manufacturer";
 		}
-		if (document.getElementById("inputEditDollImage").value == null || document.getElementById("inputEditDollImage").value == "") {
-			canSubmit = false;
-			moveButtonDown -= 17;
-			document.getElementById("submitDollError").innerHTML += "<br>You haven't entered the image";
-		}
+		// if (document.getElementById("inputEditDollImage").value == null || document.getElementById("inputEditDollImage").value == "") {
+		// 	canSubmit = false;
+		// 	moveButtonDown -= 17;
+		// 	document.getElementById("submitDollError").innerHTML += "<br>You haven't entered the image";
+		// }
 		if (document.getElementById("inputEditQuantity").value == 100) {
 			canSubmit = true;
 		}
@@ -180,7 +180,9 @@ var submitNewDoll = function() {
 			    console.log(clothesData.length);
 			    clothesData.push(newDoll);
 			    console.log(clothesData.length);
-			    //clothesData = clothesData.toString();
+			    console.log(clothesData);
+			    clothesData = clothesData.toString();
+
 
 			    $ajaxUtils
 				.post("../Dannys-Dolls/dolls.json", clothesData);
@@ -189,8 +191,12 @@ var submitNewDoll = function() {
 					function(request) {
 						var newData = request.responseText;
 						newData = JSON.parse(newData);
-						console.log(newData.length);
+						console.log(newData);
 					});
+
+				//POST SEEMS LIKE IT'S DOING FINE. I'M VERY CONFUSED WHY THE PULL ISN'T SHOWING IT. I THINK IT HAS TO DO WITH TIMING.
+
+				
 				//figure out how to write to folder to save image and write to json file to save new doll
 				//looks like i need nodejs. figure out what that is
 				//HOW THE FUCK DO I SAVE IMAGESSSSS

@@ -171,7 +171,6 @@ h1 {
   right: 10px;
   background-color: rgb(76, 46, 116);
   font-size: 1.25em;
-/*  z-index:100;*/
 }
 .search {
   position: relative;
@@ -293,7 +292,6 @@ h1 {
 /* EDIT PAGE */
 #editPage {
   position: relative;
-/*  z-index: -5;*/
   max-width: 900px;
   margin-left: auto;
   margin-right: auto;
@@ -414,11 +412,9 @@ input[type="file"] {
   margin-left: auto;
   margin-right: auto;
   padding: 10px;
-/*  z-index: inherit;*/
 }
 .dollBox {
   position: relative;
-/*  z-index: inherit;*/
 }
 .dollImg {
   width: 100%;

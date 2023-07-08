@@ -191,7 +191,8 @@
         "year": 1998,
         "conditionpurchased": "Childhood",
         "quantity": 1,
-        "manufacturer": "Mattel"
+        "manufacturer": "Mattel",
+        "notes": "Wearing generation girl dance party Barbie's skirt and Barbie Extra 14's top"
     },
     {
         "id": 20,
@@ -231,7 +232,8 @@
         "year": 2001,
         "conditionpurchased": "Childhood",
         "quantity": 1,
-        "manufacturer": "Mattel"
+        "manufacturer": "Mattel",
+        "notes": "Wearing cutie reveal jungle series elephant pieces"
     },
     {
         "id": 24,
@@ -285,7 +287,8 @@
         "year": 2003,
         "conditionpurchased": "Childhood",
         "quantity": 1,
-        "manufacturer": "Mattel"
+        "manufacturer": "Mattel",
+        "Wearing island princess wedding pack princess rosella's dress"
     },
     {
         "id": 29,
@@ -295,7 +298,8 @@
         "year": 2004,
         "conditionpurchased": "Childhood",
         "quantity": 1,
-        "manufacturer": "Mattel"
+        "manufacturer": "Mattel",
+        "notes": "Wearing enchanted seasons spring bouquet's dress"
     },
     {
         "id": 30,
@@ -325,7 +329,8 @@
         "year": 2005,
         "conditionpurchased": "Childhood",
         "quantity": 1,
-        "manufacturer": "Mattel"
+        "manufacturer": "Mattel",
+        "notes": "Wearing handsome groom ken's suit"
     },
     {
         "id": 33,
@@ -335,7 +340,8 @@
         "year": 2006,
         "conditionpurchased": "Childhood",
         "quantity": 1,
-        "manufacturer": "Mattel"
+        "manufacturer": "Mattel",
+        "notes": "Wearing the generic beach Barbie's swim suit"
     },
     {
         "id": 34,
@@ -375,7 +381,8 @@
         "year": 2007,
         "conditionpurchased": "Childhood",
         "quantity": 1,
-        "manufacturer": "Mattel"
+        "manufacturer": "Mattel",
+        "notes": "Wearing Barbie love's the ocean's dress"
     },
     {
         "id": 38,
@@ -395,7 +402,8 @@
         "year": 2007,
         "conditionpurchased": "Childhood",
         "quantity": 1,
-        "manufacturer": "Mattel"
+        "manufacturer": "Mattel",
+        "notes": "Wearing the happy family play all day teacher dress"
     },
     {
         "id": 40,
@@ -405,17 +413,19 @@
         "year": 2007,
         "conditionpurchased": "Childhood",
         "quantity": 1,
-        "manufacturer": "Mattel"
+        "manufacturer": "Mattel",
+        "notes": "Wearing 2010 I can be cheerleader's dress"
     },
     {
         "id": 41,
         "categoryshort": "barbie",
         "category": "Barbie",
-        "name": "I Can Be Astronaught Space Camp",
+        "name": "I Can Be Astronaut Space Camp",
         "year": 2008,
         "conditionpurchased": "Childhood",
         "quantity": 1,
-        "manufacturer": "Mattel"
+        "manufacturer": "Mattel",
+        "notes": "Wearing happy family play all day teacher's dress"
     },
     {
         "id": 42,
@@ -435,7 +445,8 @@
         "year": 2009,
         "conditionpurchased": "Childhood",
         "quantity": 1,
-        "manufacturer": "Mattel"
+        "manufacturer": "Mattel",
+        "notes": "Wearing extra 14's skirt"
     },
     {
         "id": 44,
@@ -475,7 +486,8 @@
         "year": 2010,
         "conditionpurchased": "Childhood",
         "quantity": 1,
-        "manufacturer": "Mattel"
+        "manufacturer": "Mattel",
+        "notes": "Wearing Barbie loves the ocean (purple)'s dress"
     },
     {
         "id": 48,
@@ -485,7 +497,8 @@
         "year": 2010,
         "conditionpurchased": "Childhood",
         "quantity": 1,
-        "manufacturer": "Mattel"
+        "manufacturer": "Mattel",
+        "notes": "Wearing Barbie in a Mermaid tale Teresa as Hadley's bikini"
     },
     {
         "id": 49,
@@ -495,7 +508,8 @@
         "year": 2010,
         "conditionpurchased": "Childhood",
         "quantity": 1,
-        "manufacturer": "Mattel"
+        "manufacturer": "Mattel",
+        "notes": "Wearing handsome groom ken's suit"
     },
     {
         "id": 50,
@@ -535,7 +549,8 @@
         "year": 2012,
         "conditionpurchased": "Boxed, Childhood",
         "quantity": 2,
-        "manufacturer": "Mattel"
+        "manufacturer": "Mattel",
+        "notes": "The one on the right is wearing holiday Barbie 1988's dress"
     },
     {
         "id": 54,
@@ -888,7 +903,8 @@
         "year": 2007,
         "conditionpurchased": "Childhood",
         "quantity": 1,
-        "manufacturer": "Jakks Pacific"
+        "manufacturer": "Jakks Pacific",
+        "notes": "Wearing the in concert collection best of both worlds Hannah Montana top and an unidentified pair of pants"
     },
     {
         "id": 89,
@@ -898,7 +914,8 @@
         "year": 2007,
         "conditionpurchased": "Childhood",
         "quantity": 1,
-        "manufacturer": "Jakks Pacific"
+        "manufacturer": "Jakks Pacific",
+        "notes": "Wearing handsome groom ken's suit"
     },
     {
         "id": 90,
@@ -908,7 +925,8 @@
         "year": 2008,
         "conditionpurchased": "Childhood",
         "quantity": 1,
-        "manufacturer": "Mattel"
+        "manufacturer": "Mattel",
+        "notes": "Wearing tropical splash skipper's bathing suit"
     },
     {
         "id": 91,
@@ -918,7 +936,8 @@
         "year": 2008,
         "conditionpurchased": "Childhood",
         "quantity": 1,
-        "manufacturer": "Mattel"
+        "manufacturer": "Mattel",
+        "notes": "Wearing tropical splash skipper's bathing suit"
     },
     {
         "id": 92,
@@ -3210,7 +3229,7 @@
         "conditionpurchased": "Used (friend's childhood)",
         "quantity": 2,
         "manufacturer": "Kanekelon",
-        "notes": "Gift from Gideon (both)"
+        "notes": "Gift from Gideon (both). On the left is wearing the inspired by Roxy fashion pack (see sunshine day Barbie) and on the right is wearing Barbie in a mermaid tale Teresa as Hadley bikini"
     },
     {
         "id": 320,
@@ -3221,7 +3240,7 @@
         "conditionpurchased": "Used (friend's childhood)",
         "quantity": 1,
         "manufacturer": "Mattel",
-        "notes": "Gift from Gideon (both)"
+        "notes": "Gift from Gideon. Wearing extra 14's top and generation girl dance party Barbie's skirt (backwards because the snap wouldn't close)"
     },
     {
         "id": 321,
@@ -3253,7 +3272,7 @@
         "conditionpurchased": "Used (friend's childhood)",
         "quantity": 1,
         "manufacturer": "Mattel",
-        "notes": "Broken neck-filled with acryllic, needs to be reattached"
+        "notes": "Broken neck-filled with acryllic, needs to be reattached. Wearing 2010 I can be cheerleader's dress."
     },
     {
         "id": 324,
@@ -3931,5 +3950,79 @@
         "quantity": 1,
         "manufacturer": "IMC Toys",
         "notes": "Does not have a box date so I went by release date"
+    },
+    {
+        "id": 393,
+        "categoryshort": "barbie",
+        "category": "Barbie",
+        "name": "Superstar Barbie",
+        "year": 2009,
+        "conditionpurchased": "Boxed",
+        "quantity": 1,
+        "manufacturer": "Mattel"
+    },
+    {
+        "id": 394,
+        "categoryshort": "barbie",
+        "category": "Barbie",
+        "name": "60th Anniversary Ken",
+        "year": 2020,
+        "conditionpurchased": "New",
+        "quantity": 2,
+        "manufacturer": "Mattel"
+    },
+    {
+        "id": 395,
+        "categoryshort": "barbie",
+        "category": "Barbie",
+        "name": "Gold Medal 1975 Reproduction",
+        "year": 2019,
+        "conditionpurchased": "New",
+        "quantity": 1,
+        "manufacturer": "Mattel"
+    },
+    {
+        "id": 396,
+        "categoryshort": "barbie",
+        "category": "Barbie",
+        "name": "Beach Glam Barbie",
+        "year": 2006,
+        "conditionpurchased": "Childhood",
+        "quantity": 1,
+        "manufacturer": "Mattel"
+    },
+    {
+        "id": 397,
+        "categoryshort": "barbie",
+        "category": "Barbie",
+        "name": "Western Barbie",
+        "year": 1980,
+        "conditionpurchased": "Used",
+        "quantity": 1,
+        "manufacturer": "Mattel",
+        "notes": "Cursed winking mechanic"
+    },
+    {
+        "id": 398,
+        "categoryshort": "bratz",
+        "category": "Bratz",
+        "name": "The Bratz Pack Nevra",
+        "year": 2022,
+        "conditionpurchased": "New",
+        "quantity": 1,
+        "manufacturer": "MGA Entertainment",
+        "notes": "Reproduction of 2003 Formal Funk Super-Stylin' Runway Disco Nevra"
+    },
+    {
+        "id": 399,
+        "categoryshort": "bratz",
+        "category": "Bratz",
+        "name": "The Bratz Pack Kiana",
+        "year": 2022,
+        "conditionpurchased": "New",
+        "quantity": 1,
+        "manufacturer": "MGA Entertainment",
+        "notes": "Reproduction of 2005 Wild Wild West Kiana"
     }
+
 ]

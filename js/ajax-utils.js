@@ -19,15 +19,15 @@
 
 	ajaxUtils.doesFileExist = 
 		function(urlToFile)  {
-		    var xhr = new XMLHttpRequest();
-		    xhr.open('HEAD', urlToFile, false);
-		    xhr.send();
-		     
-		    if (xhr.status == "404") {
-		        return false;
-		    } else {
-		        return true;
-		    }
+			var http = getRequestObject();
+	        http.open('HEAD', urlToFile, false);
+	        http.send();
+	        if (http.status != 404){
+	        	return true;
+	        }
+	        else {
+	            return false;
+	        }
 		}
 
 	//attached to ajaxUtils, so will be visible
@@ -46,15 +46,21 @@
 	ajaxUtils.post = 
 		function(postUrl, postContent) {
 			var request = getRequestObject();
+			request.onprogress = function(event) {
+			  console.log(`Uploaded ${event.loaded} of ${event.total} bytes`);
+			};
+			request.onload = function() {
+			  console.log(`Upload finished successfully.`);
+			};
 			request.open("POST", postUrl, false);
-			request.setRequestHeader("Content-Type", "application/json");
-			console.log('request.readyState=',request.readyState);
-         	console.log('request.status=',request.status);
+			console.log(request);
 			request.send(postContent);
-			console.log('request.readyState=',request.readyState);
-         	console.log('request.status=',request.status);
+			console.log(request);
 
-         	//IS THE PROBLEM WITH A PERMISSION THING? TBD
+
+			
+
+			
 		}
 
 	//Only calls user provided 'responseHandler'
