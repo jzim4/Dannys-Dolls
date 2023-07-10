@@ -1696,7 +1696,7 @@
         "id": 167,
         "categoryshort": "mh",
         "category": "Monster High",
-        "name": "Dead Tired Khols Rerelease Draculaura",
+        "name": "Dead Tired Kohls Rerelease Draculaura",
         "year": 2010,
         "conditionpurchased": "Childhood",
         "quantity": 1,
@@ -3441,13 +3441,13 @@
     },
     {
         "id": 341,
-        "categoryshort": "mh",
-        "category": "Monster High",
-        "name": "13 Wishes Catty Noir",
-        "year": 2012,
-        "conditionpurchased": "Childhood",
-        "quantity": 1,
-        "manufacturer": "Mattel"
+        "categoryshort": "",
+        "category": "",
+        "name": "",
+        "year": "",
+        "conditionpurchased": "",
+        "quantity": "",
+        "manufacturer": ""
     },
     {
         "id": 342,
@@ -3852,13 +3852,13 @@
     },
     {
         "id": 383,
-        "categoryshort": "mh",
-        "category": "Monster High",
-        "name": "Dance Class Howleen Wolf",
-        "year": 2012,
-        "conditionpurchased": "Childhood",
-        "quantity": 1,
-        "manufacturer": "Mattel"
+        "categoryshort": "",
+        "category": "",
+        "name": "",
+        "year": "",
+        "conditionpurchased": "",
+        "quantity": "",
+        "manufacturer": ""
     },
     {
         "id": 384,
@@ -4088,13 +4088,13 @@
     },
     {
         "id": 406,
-        "categoryshort": "mh",
-        "category": "Monster High",
-        "name": "Coffin Bean Clawdeen Wolf",
-        "year": 2011,
-        "conditionpurchased": "Childhood",
-        "quantity": 1,
-        "manufacturer": "Mattel"
+        "categoryshort": "",
+        "category": "",
+        "name": "",
+        "year": "",
+        "conditionpurchased": "",
+        "quantity": "",
+        "manufacturer": ""
     },
     {
         "id": 407,
@@ -4118,13 +4118,13 @@
     },
     {
         "id": 409,
-        "categoryshort": "mh",
-        "category": "Monster High",
-        "name": "Student Disembody Council Scarah Screams",
-        "year": 2014,
-        "conditionpurchased": "Childhood",
-        "quantity": 1,
-        "manufacturer": "Mattel"
+        "categoryshort": "",
+        "category": "",
+        "name": "",
+        "year": "",
+        "conditionpurchased": "",
+        "quantity": "",
+        "manufacturer": ""
     },
     {
         "id": 410,
@@ -4148,18 +4148,18 @@
     },
     {
         "id": 412,
-        "categoryshort": "mh",
-        "category": "Monster High",
-        "name": "Skull Shores Clawdeen Wolf",
-        "year": 2012,
-        "conditionpurchased": "Childhood",
-        "quantity": 1,
-        "manufacturer": "Mattel"
+        "categoryshort": "",
+        "category": "",
+        "name": "",
+        "year": "",
+        "conditionpurchased": "",
+        "quantity": "",
+        "manufacturer": ""
     },
     {
         "id": 413,
-        "categoryshort": "mh",
-        "category": "Monster High",
+        "categoryshort": "rh",
+        "category": "Rainbow High",
         "name": "Rainbow Vision The Royal Three Tessa Park",
         "year": 2022,
         "conditionpurchased": "Childhood",
