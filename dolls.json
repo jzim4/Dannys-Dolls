@@ -19,7 +19,7 @@
         "conditionpurchased": "Used",
         "quantity": 1,
         "manufacturer": "Mattel",
-        "notes": "Currently Just a Head, Repackaged 1976 Superstar"
+        "notes": "Currently just a head"
     },
     {
         "id": 3,
@@ -561,7 +561,7 @@
         "conditionpurchased": "Childhood",
         "quantity": 1,
         "manufacturer": "Mattel",
-        "notes": "Chipped Neck"
+        "notes": "Chipped neck, fixed"
     },
     {
         "id": 55,
@@ -983,7 +983,7 @@
         "id": 96,
         "categoryshort": "disney",
         "category": "Disney",
-        "name": "Disney Store Brave Triplet",
+        "name": "Disney Store Brave Triplets",
         "year": 2012,
         "conditionpurchased": "Childhood",
         "quantity": 1,
@@ -1003,7 +1003,7 @@
         "id": 98,
         "categoryshort": "disney",
         "category": "Disney",
-        "name": "Disney Store Brave Queen Elinoor",
+        "name": "Disney Store Brave Queen Elinor with Bear",
         "year": 2012,
         "conditionpurchased": "Childhood",
         "quantity": 1,
@@ -1736,23 +1736,23 @@
     },
     {
         "id": 171,
-        "categoryshort": "",
-        "category": "",
-        "name": "",
-        "year": "",
-        "conditionpurchased": "",
-        "quantity": "",
-        "manufacturer": ""
+        "categoryshort": "barbie",
+        "category": "Barbie",
+        "name": "Supersize Barbie",
+        "year": 1976,
+        "conditionpurchased": "Used",
+        "quantity": 1,
+        "manufacturer": "Mattel"
     },
     {
         "id": 172,
-        "categoryshort": "",
-        "category": "",
-        "name": "",
-        "year": "",
-        "conditionpurchased": "",
-        "quantity": "",
-        "manufacturer": ""
+        "categoryshort": "barbie",
+        "category": "Barbie",
+        "name": "Ballet Star Barbie",
+        "year": 2003,
+        "conditionpurchased": "Used",
+        "quantity": 1,
+        "manufacturer": "Mattel"
     },
     {
         "id": 173,
@@ -3714,7 +3714,7 @@
         "id": 369,
         "categoryshort": "barbie",
         "category": "Barbie",
-        "name": "Barbie and the Pink Shoes 2 Looks Barbie as Kristin",
+        "name": "Barbie and the Pink Shoes 2 Looks Barbie as Kristyn",
         "year": 2012,
         "conditionpurchased": "Childhood",
         "quantity": 1,
@@ -3834,7 +3834,7 @@
         "id": 381,
         "categoryshort": "mh",
         "category": "Monster High",
-        "name": "Inner Monster Fangtastic Love & Firefully Fiesty",
+        "name": "Inner Monster Fangtastic Love & Fearfully Fiesty",
         "year": 2014,
         "conditionpurchased": "Childhood",
         "quantity": 1,

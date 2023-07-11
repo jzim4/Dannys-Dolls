@@ -154,7 +154,6 @@ var displayDollSearch = function(searchCategoryInput, searchNameInput,searchYear
 			searchingLabel += "</div>";
 
 			for (var i=0; i<dataArrDolls.length; i++) {
-				console.log(dataArrDolls[i]);
 				if (dataArrDolls[i].year.toString().includes("present")) {
 					dollYear = dataArrDolls[i].year.toString().replace("present","3000");
 				}
@@ -275,6 +274,34 @@ var clickableClothes = function() {
 	};
 	window.scrollTo(0,0);
 }
+
+//import descriptions
+var descr = [];
+var getDescription = function(categoryshort) {
+	$ajaxUtils.sendGetRequest("../Dannys-Dolls/descr/" + categoryshort + "descr.json",false, function(res) {
+		var newDescr = res.responseText;
+		newDescr = JSON.parse(newDescr);
+		console.log(newDescr);
+		descr.push(...newDescr);
+		console.log(descr);
+	}
+)};
+getDescription("ag");
+getDescription("barbie");
+getDescription("bratz");
+getDescription("disney");
+getDescription("eah");
+getDescription("lol");
+getDescription("mac");
+getDescription("mh");
+getDescription("misc");
+getDescription("rh");
+
+descr = Object.assign({}, ...descr);
+
+// var clothesdescr;
+// getDescription(clothesdescr, "clothes");
+
 var displayDollIdPage = function(dollId) {
 	window.scrollTo(0,0);
 	var toBody = "";
@@ -301,7 +328,7 @@ var displayDollIdPage = function(dollId) {
 				img = "<img class=\"idImg2\" src=\"../Dannys-Dolls/images/{{categoryshort}}/" + doll.id.toString() + ".jpeg\"></img><img class=\"idImg2\" src=\"../Dannys-Dolls/images/{{categoryshort}}/" + doll.id.toString() + "b" + ".jpeg\"></img><img class=\"idImg2\" src=\"../Dannys-Dolls/images/{{categoryshort}}/" + doll.id.toString() + "c" + ".jpeg\"></img>";
 				widthClass = "col-lg-4 col-md-4 col-sm-12 col-xs-12";
 			}
-
+			getDescription("barbie");
 			var prepareToBody = insertProperty(html,"img",img);
 			var prepareToBody = insertProperty(prepareToBody,"width",widthClass);
 			var prepareToBody1 = insertProperty(prepareToBody,"categoryshort",doll.categoryshort);
@@ -316,14 +343,16 @@ var displayDollIdPage = function(dollId) {
 			else {
 				var prepareToBody7 = prepareToBody6.replace("<div id = \"idNotes\" class=\"idInfoLine\">- Notes: {{notes}}</div>","");
 			}
-	
-			toBody += prepareToBody7;
+
+			//NEED TO BE ABLE TO CALL, FOR EXAMPLE: agdescr[303], RIGHT NOW ITS INPUTTING THE STRING
+			var prepareToBody8 = insertProperty(prepareToBody7,"descr",descr[doll.id.toString()]);
+
+			toBody += prepareToBody8;
 			searchingLabel = searchingLabel.replace("Search", "Return to search");
 			searchingLabel = searchingLabel.replace("1", "2");
 			document.getElementById("body")
 			.innerHTML = searchingLabel + toBody;
 
-			console.log(document.getElementsByClassName("idImg").style);
 			//document.getElementsByClassName("idImg").style.setProperty('--width', width + "%");
 
 
@@ -406,10 +435,11 @@ var signInButtonOpener = function (callback) {
 			
 		});
 }
-document.addEventListener("click",(hit)=>console.log(hit.target.id));
+//document.addEventListener("click",(hit)=>console.log(hit.target.id));
 
 document.addEventListener("DOMContentLoaded",  
 	function(event) {
+		window.scrollTo(0,0);
 		categoriesOpener(clickableCategories);
 		homeButton(clickableCategories);
 

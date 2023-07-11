@@ -555,12 +555,25 @@ input[type="file"] {
   background-color: #e8d1f5;
   padding: 3px;
   margin-bottom: 8px;
+  width: 600px;
+  margin: auto;
+  margin-bottom: 10px;
 }
 #idDescr {
   border: solid 2px #4c2e74;
   border-radius: 3px;
   padding: 3px;
   margin-bottom: 15px;
+  text-indent: 12px;
+  width: 600px;
+  margin: auto;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+@media (max-width: 610px) {
+  #idDescr.idInfoLine, #idInfo {
+    width: 300px;
+  }
 }
 
 /* CONTAINER */
