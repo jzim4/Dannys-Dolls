@@ -1258,5 +1258,42 @@
         "year": 2013,
         "quantity": 1,
         "complete": "Yes"
+    },
+    {
+        "id": 141,
+        "name": "Julie's Home Game Uniform",
+        "line": "Historical Character",
+        "character": "Julie Albright",
+        "year": "2020-present",
+        "quantity": 1,
+        "complete": "Yes"
+    },
+    {
+        "id": 142,
+        "name": "Fairy Costume Accessories",
+        "line": "Historical Character",
+        "character": "Cécile Rey and Marie-Grace Gardener",
+        "year": "2011-2013",
+        "quantity": 1,
+        "complete": "Yes but the mask is partially broken"
+    },
+    {
+        "id": 143,
+        "name": "Party Pinafore and Birthday Crown",
+        "line": "Historical Character",
+        "character": "Molly McIntire",
+        "year": "1987-2013,2022-present",
+        "quantity": 1,
+        "complete": "No lol"
+    },
+    {
+        "id": 144,
+        "name": "Crinoline and Chemise",
+        "line": "Historical Character",
+        "character": "Cécile Rey and Marie-Grace Gardener",
+        "year": "2011-2014",
+        "quantity": 1,
+        "complete": "Yes"
     }
+
 ]
