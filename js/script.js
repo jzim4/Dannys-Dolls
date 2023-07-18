@@ -319,7 +319,6 @@ var displayDollIdPage = function(dollId) {
 			}
 			var widthClass = "col-lg-12 col-md-12 col-sm-12 col-xs-12";
 			var img = "<img class=\"idImg\" src=\"../Dannys-Dolls/images/{{categoryshort}}/" + doll.id.toString() + ".jpeg\"></img>";
-			console.log($ajaxUtils.doesFileExist("../Dannys-Dolls/images/" + doll.categoryshort + "/" + doll.id.toString()+"a.jpeg"));
 			if ($ajaxUtils.doesFileExist("../Dannys-Dolls/images/" + doll.categoryshort + "/" + doll.id.toString()+"b.jpeg")) {
 				img += "<img class=\"idImg\" src=\"../Dannys-Dolls/images/{{categoryshort}}/" + doll.id.toString() + "b" + ".jpeg\"></img>";
 				widthClass = "col-lg-6 col-md-6 col-sm-12 col-xs-12";
@@ -435,7 +434,7 @@ var signInButtonOpener = function (callback) {
 			
 		});
 }
-//document.addEventListener("click",(hit)=>console.log(hit.target.id));
+// document.addEventListener("click",(hit)=>console.log(hit.target.id));
 
 document.addEventListener("DOMContentLoaded",  
 	function(event) {
