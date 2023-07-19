@@ -75,7 +75,9 @@ $ajaxUtils.sendGetRequest("../Dannys-Dolls/dolls.json",false, function(res) {
 	// console.log(data);
 	dataArrDolls = JSON.parse(data);
 	dataArrDolls = dataArrDolls.sort((a, b) => {
-		if (a.year == b.year) {
+		ayear = a.year.toString().substr(0,4);
+		byear = b.year.toString().substr(0,4);
+		if (ayear == byear) {
 			if (a.name>b.name) {
 				return 1;
 			}
@@ -87,7 +89,7 @@ $ajaxUtils.sendGetRequest("../Dannys-Dolls/dolls.json",false, function(res) {
 			}
 		}
 		else {
-			return a.year-b.year;
+			return ayear-byear;
 		}
 				
 	});
@@ -102,6 +104,7 @@ $ajaxUtils.sendGetRequest("../Dannys-Dolls/clothes.json",false, function(res) {
 	var data = res.responseText;
 	// console.log(data);
 	dataArrClothes = JSON.parse(data);
+	console.log("undated"<"dated");
 	dataArrClothes = dataArrClothes.sort((a, b) => {
 		if (a.year == b.year) {
 			if (a.name>b.name) {
@@ -281,9 +284,9 @@ var getDescription = function(categoryshort) {
 	$ajaxUtils.sendGetRequest("../Dannys-Dolls/descr/" + categoryshort + "descr.json",false, function(res) {
 		var newDescr = res.responseText;
 		newDescr = JSON.parse(newDescr);
-		console.log(newDescr);
+		//console.log(newDescr);
 		descr.push(...newDescr);
-		console.log(descr);
+		//console.log(descr);
 	}
 )};
 getDescription("ag");
