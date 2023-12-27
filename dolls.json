@@ -891,8 +891,8 @@
         "category": "Disney",
         "name": "Sparkling Princess Sleeping Beauty",
         "year": 2007,
-        "conditionpurchased": "Childhood",
-        "quantity": 1,
+        "conditionpurchased": "Childhood, Used (Friend's Childhood)",
+        "quantity": 3,
         "manufacturer": "Mattel"
     },
     {
@@ -1005,8 +1005,8 @@
         "category": "Disney",
         "name": "Disney Store Brave Queen Elinor with Bear",
         "year": 2012,
-        "conditionpurchased": "Childhood",
-        "quantity": 1,
+        "conditionpurchased": "Childhood, Used",
+        "quantity": 2,
         "manufacturer": "Disney Store"
     },
     {
@@ -1146,8 +1146,8 @@
         "category": "Ever After High",
         "name": "Signature Cerise Hood",
         "year": 2013,
-        "conditionpurchased": "Childhood",
-        "quantity": 1,
+        "conditionpurchased": "Childhood, Used",
+        "quantity": 2,
         "manufacturer": "Mattel"
     },
     {
@@ -2553,8 +2553,8 @@
         "category": "Rainbow High",
         "name": "Series 1 Poppy Rowan",
         "year": 2020,
-        "conditionpurchased": "New",
-        "quantity": 1,
+        "conditionpurchased": "New, Used",
+        "quantity": 2,
         "manufacturer": "MGA Entertainment"
     },
     {
@@ -2563,8 +2563,8 @@
         "category": "Rainbow High",
         "name": "Series 1 Ruby Anderson",
         "year": 2020,
-        "conditionpurchased": "New",
-        "quantity": 1,
+        "conditionpurchased": "New, Used",
+        "quantity": 2,
         "manufacturer": "MGA Entertainment"
     },
     {
@@ -2634,8 +2634,8 @@
         "category": "Rainbow High",
         "name": "Series Special Holly De'Vious",
         "year": 2021,
-        "conditionpurchased": "New",
-        "quantity": 1,
+        "conditionpurchased": "New, Used",
+        "quantity": 2,
         "manufacturer": "MGA Entertainment"
     },
     {
@@ -2675,7 +2675,7 @@
         "name": "Series 3 Emi Vanda",
         "year": 2021,
         "conditionpurchased": "New",
-        "quantity": 1,
+        "quantity": 2,
         "manufacturer": "MGA Entertainment"
     },
     {
@@ -3632,43 +3632,45 @@
     },
     {
         "id": 361,
-        "categoryshort": "",
-        "category": "",
-        "name": "",
-        "year": "",
-        "conditionpurchased": "",
-        "quantity": "",
-        "manufacturer": ""
+        "categoryshort": "barbie",
+        "category": "Barbie",
+        "name": "Peaches 'N Cream",
+        "year": 1984,
+        "conditionpurchased": "Used",
+        "quantity": 1,
+        "manufacturer": "Mattel",
+        "notes": "needs neck repair"
     },
     {
         "id": 362,
-        "categoryshort": "",
-        "category": "",
-        "name": "",
-        "year": "",
-        "conditionpurchased": "",
-        "quantity": "",
-        "manufacturer": ""
+        "categoryshort": "barbie",
+        "category": "Barbie",
+        "name": "Magic Moves",
+        "year": 1985,
+        "conditionpurchased": "Used",
+        "quantity": 1,
+        "manufacturer": "Mattel",
+        "notes": "Mechanic does not work"
     },
     {
         "id": 363,
-        "categoryshort": "",
-        "category": "",
-        "name": "",
-        "year": "",
-        "conditionpurchased": "",
-        "quantity": "",
-        "manufacturer": ""
+        "categoryshort": "barbie",
+        "category": "Barbie",
+        "name": "Mermaid",
+        "year": 1991,
+        "conditionpurchased": "Used",
+        "quantity": 1,
+        "manufacturer": "Mattel"
     },
     {
         "id": 364,
-        "categoryshort": "",
-        "category": "",
-        "name": "",
-        "year": "",
-        "conditionpurchased": "",
-        "quantity": "",
-        "manufacturer": ""
+        "categoryshort": "barbie",
+        "category": "Barbie",
+        "name": "Pet Pals Courtney",
+        "year": 1991,
+        "conditionpurchased": "Used",
+        "quantity": 1,
+        "manufacturer": "Mattel"
     },
     {
         "id": 365,
@@ -3752,13 +3754,13 @@
     },
     {
         "id": 373,
-        "categoryshort": "",
-        "category": "",
-        "name": "",
-        "year": "",
-        "conditionpurchased": "",
-        "quantity": "",
-        "manufacturer": ""
+        "categoryshort": "barbie",
+        "category": "Barbie",
+        "name": "Glitter Beach",
+        "year": 1992,
+        "conditionpurchased": "Used",
+        "quantity": 1,
+        "manufacturer": "Mattel"
     },
     {
         "id": 374,
@@ -3852,13 +3854,13 @@
     },
     {
         "id": 383,
-        "categoryshort": "",
-        "category": "",
-        "name": "",
-        "year": "",
-        "conditionpurchased": "",
-        "quantity": "",
-        "manufacturer": ""
+        "categoryshort": "barbie",
+        "category": "Barbie",
+        "name": "Hollywood Hair",
+        "year": 1992,
+        "conditionpurchased": "Used",
+        "quantity": 1,
+        "manufacturer": "Mattel"
     },
     {
         "id": 384,
@@ -4088,13 +4090,14 @@
     },
     {
         "id": 406,
-        "categoryshort": "",
-        "category": "",
-        "name": "",
-        "year": "",
-        "conditionpurchased": "",
-        "quantity": "",
-        "manufacturer": ""
+        "categoryshort": "barbie",
+        "category": "Barbie",
+        "name": "Li'l Friends of Kelly \"first edition\" Marisa",
+        "year": 1996,
+        "conditionpurchased": "Used (Friend's Childhood)",
+        "quantity": 1,
+        "manufacturer": "Mattel",
+        "notes": "#16002"
     },
     {
         "id": 407,
@@ -4118,13 +4121,13 @@
     },
     {
         "id": 409,
-        "categoryshort": "",
-        "category": "",
-        "name": "",
-        "year": "",
-        "conditionpurchased": "",
-        "quantity": "",
-        "manufacturer": ""
+        "categoryshort": "barbie",
+        "category": "Barbie",
+        "name": "Eatin' Fun Kelly",
+        "year": 1997,
+        "conditionpurchased": "Used (friend's childhood)",
+        "quantity": 1,
+        "manufacturer": "Mattel"
     },
     {
         "id": 410,
@@ -4148,13 +4151,13 @@
     },
     {
         "id": 412,
-        "categoryshort": "",
-        "category": "",
-        "name": "",
-        "year": "",
-        "conditionpurchased": "",
-        "quantity": "",
-        "manufacturer": ""
+        "categoryshort": "barbie",
+        "category": "Barbie",
+        "name": "Power Wheels Tommy",
+        "year": 1997,
+        "conditionpurchased": "Used (friend's childhood)",
+        "quantity": 1,
+        "manufacturer": "Mattel"
     },
     {
         "id": 413,
@@ -4225,6 +4228,732 @@
         "conditionpurchased": "New",
         "quantity": 1,
         "manufacturer": "Mattel"
-    }
+    },
+    {
+        "id": 420,
+        "categoryshort": "barbie",
+        "category": "Barbie",
+        "name": "Adventures with Li'l Friends of Kelly Cowgirl Chelsie",
+        "year": 1998,
+        "conditionpurchased": "Used (friend's childhood)",
+        "quantity": 1,
+        "manufacturer": "Mattel",
+        "notes": "#20856"
+    },
+    {
+        "id": 421,
+        "categoryshort": "barbie",
+        "category": "Barbie",
+        "name": "Adventures with Li'l Friends of Kelly Dress-Up Kayla",
+        "year": 1998,
+        "conditionpurchased": "Used (friend's childhood)",
+        "quantity": 1,
+        "manufacturer": "Mattel",
+        "notes": "#21638"
+    },
+    {
+        "id": 422,
+        "categoryshort": "barbie",
+        "category": "Barbie",
+        "name": "Easterrific! Kelly as a Cheery Chick!",
+        "year": 2000,
+        "conditionpurchased": "Used (friend's childhood)",
+        "quantity": 1,
+        "manufacturer": "Mattel"
+    },
+    {
+        "id": 423,
+        "categoryshort": "barbie",
+        "category": "Barbie",
+        "name": "I Can Be Children's Doctor Barbie",
+        "year": 2000,
+        "conditionpurchased": "Used",
+        "quantity": 1,
+        "manufacturer": "Mattel"
+    },
+    {
+        "id": 424,
+        "categoryshort": "barbie",
+        "category": "Barbie",
+        "name": "Holiday Excitement",
+        "year": 2001,
+        "conditionpurchased": "Boxed",
+        "quantity": 1,
+        "manufacturer": "Mattel"
+    },
+    {
+        "id": 425,
+        "categoryshort": "barbie",
+        "category": "Barbie",
+        "name": "Kelly Club Lots of Secrets Clubhouse Detective Tommy",
+        "year": 2001,
+        "conditionpurchased": "Used (friend's childhood)",
+        "quantity": 1,
+        "manufacturer": "Mattel",
+        "notes": "#53471"
+    },
+    {
+        "id": 426,
+        "categoryshort": "barbie",
+        "category": "Barbie",
+        "name": "Lounge Kitties Black Panther",
+        "year": 2003,
+        "conditionpurchased": "Boxed",
+        "quantity": 1,
+        "manufacturer": "Mattel"
+    },
+    {
+        "id": 427,
+        "categoryshort": "barbie",
+        "category": "Barbie",
+        "name": "Ballerina Sisters Kelly",
+        "year": 2006,
+        "conditionpurchased": "Used (friend's childhood)",
+        "quantity": 1,
+        "manufacturer": "Mattel",
+        "notes": "Gift from Gideon"
+    },
+    {
+        "id": 428,
+        "categoryshort": "barbie",
+        "category": "Barbie",
+        "name": "I Can Be Babysitter Barbie",
+        "year": 2009,
+        "conditionpurchased": "Used",
+        "quantity": 1,
+        "manufacturer": "Mattel"
+    },
+    {
+        "id": 429,
+        "categoryshort": "barbie",
+        "category": "Barbie",
+        "name": "Cut & Style Princess Teresa",
+        "year": 2010,
+        "conditionpurchased": "Used (friend's childhood)",
+        "quantity": 1,
+        "manufacturer": "Mattel"
+    },
+    {
+        "id": 430,
+        "categoryshort": "barbie",
+        "category": "Barbie",
+        "name": "I Can Be SeaWorld Trainer",
+        "year": 2011,
+        "conditionpurchased": "Used",
+        "quantity": 1,
+        "manufacturer": "Mattel"
+    },
+    {
+        "id": 431,
+        "categoryshort": "barbie",
+        "category": "Barbie",
+        "name": "#X9579 \"chic pinktastic\" Barbie",
+        "year": 2012,
+        "conditionpurchased": "Used",
+        "quantity": 1,
+        "manufacturer": "Mattel"
+    },
+    {
+        "id": 432,
+        "categoryshort": "barbie",
+        "category": "Barbie",
+        "name": "You Can Be Anything Beekeeper",
+        "year": 2017,
+        "conditionpurchased": "Used",
+        "quantity": 1,
+        "manufacturer": "Mattel"
+    },
+    {
+        "id": 433,
+        "categoryshort": "barbie",
+        "category": "Barbie",
+        "name": "You Can Be Anything Gymnast",
+        "year": 2019,
+        "conditionpurchased": "Used",
+        "quantity": 1,
+        "manufacturer": "Mattel"
+    },
+    {
+        "id": 434,
+        "categoryshort": "barbie",
+        "category": "Barbie",
+        "name": "Reproduction 1977 Superstar Christie",
+        "year": 2020,
+        "conditionpurchased": "New",
+        "quantity": 1,
+        "manufacturer": "Mattel"
+    },
+    {
+        "id": 435,
+        "categoryshort": "barbie",
+        "category": "Barbie",
+        "name": "Fashionistas #192 (Ken)",
+        "year": 2021,
+        "conditionpurchased": "New",
+        "quantity": 1,
+        "manufacturer": "Mattel"
+    },
+    {
+        "id": 436,
+        "categoryshort": "barbie",
+        "category": "Barbie",
+        "name": "Barbie The Movie Perfect Day Ken",
+        "year": 2022,
+        "conditionpurchased": "New",
+        "quantity": 1,
+        "manufacturer": "Mattel"
+    },
+    {
+        "id": 437,
+        "categoryshort": "barbie",
+        "category": "Barbie",
+        "name": "Barbie the Movie Barbie in Pink Power Jumpsuit",
+        "year": 2023,
+        "conditionpurchased": "New",
+        "quantity": 1,
+        "manufacturer": "Mattel"
+    },
+    {
+        "id": 438,
+        "categoryshort": "bratz",
+        "category": "Bratz",
+        "name": "The Bratz Pack Felicia",
+        "year": 2023,
+        "conditionpurchased": "New",
+        "quantity": 1,
+        "manufacturer": "MGA Entertainment",
+        "notes": "Reproduction of 2005 Campfire Felicia"
+    },
+    {
+        "id": 439,
+        "categoryshort": "bratz",
+        "category": "Bratz",
+        "name": "The Bratz Pack Fianna",
+        "year": 2023,
+        "conditionpurchased": "New",
+        "quantity": 1,
+        "manufacturer": "MGA Entertainment"
+    },
+    {
+        "id": 440,
+        "categoryshort": "disney",
+        "category": "Disney",
+        "name": "Classic Snow White",
+        "year": 2000,
+        "conditionpurchased": "Used (friend's childhood)",
+        "quantity": 1,
+        "manufacturer": "Disney"
+    },
+    {
+        "id": 441,
+        "categoryshort": "disney",
+        "category": "Disney",
+        "name": "Slumber Party Sleeping Beauty",
+        "year": 2007,
+        "conditionpurchased": "Used (friend's childhood)",
+        "quantity": 1,
+        "manufacturer": "Disney"
+    },
+    {
+        "id": 442,
+        "categoryshort": "disney",
+        "category": "Disney",
+        "name": "Disney Princess Charm Ariel",
+        "year": 2008,
+        "conditionpurchased": "Used (friend's childhood)",
+        "quantity": 1,
+        "manufacturer": "Simba Toys",
+        "notes": "Date is approximate"
+    },
+    {
+        "id": 443,
+        "categoryshort": "disney",
+        "category": "Disney",
+        "name": "Classic Aurora",
+        "year": 2009,
+        "conditionpurchased": "Used",
+        "quantity": 1,
+        "manufacturer": "Disney Store"
+    },
+    {
+        "id": 444,
+        "categoryshort": "disney",
+        "category": "Disney",
+        "name": "Classic Belle",
+        "year": 2009,
+        "conditionpurchased": "Used",
+        "quantity": 1,
+        "manufacturer": "Disney Store"
+    },
+    {
+        "id": 445,
+        "categoryshort": "disney",
+        "category": "Disney",
+        "name": "Disney Fairies Tinkerbell & Friends Flower Garden Party Rosetta",
+        "year": 2010,
+        "conditionpurchased": "Childhood, Used",
+        "quantity": 2,
+        "manufacturer": "Jakks Pacific"
+    },
+    {
+        "id": 446,
+        "categoryshort": "disney",
+        "category": "Disney",
+        "name": "Classic Ariel",
+        "year": 2013,
+        "conditionpurchased": "Used",
+        "quantity": 1,
+        "manufacturer": "Disney Store"
+    },
+    {
+        "id": 447,
+        "categoryshort": "disney",
+        "category": "Disney",
+        "name": "Ariel and Sisters Doll Gift Set Adella",
+        "year": 2013,
+        "conditionpurchased": "Used",
+        "quantity": 1,
+        "manufacturer": "Disney Store"
+    },
+    {
+        "id": 448,
+        "categoryshort": "disney",
+        "category": "Disney",
+        "name": "Little Mermaid Pop-Up Castle Ariel",
+        "year": 2006,
+        "conditionpurchased": "Childhood",
+        "quantity": 1,
+        "manufacturer": "Mattel"
+    },
+    {
+        "id": 449,
+        "categoryshort": "disney",
+        "category": "Disney",
+        "name": "Disney Fairies The Pirate Fairy Zarina",
+        "year": 2014,
+        "conditionpurchased": "Used",
+        "quantity": 1,
+        "manufacturer": "Disney Store"
+    },
+    {
+        "id": 450,
+        "categoryshort": "eah",
+        "category": "Ever After High",
+        "name": "Enchanted Picnic Raven Queen",
+        "year": 2014,
+        "conditionpurchased": "Used",
+        "quantity": 1,
+        "manufacturer": "Mattel"
+    },
+    {
+        "id": 451,
+        "categoryshort": "eah",
+        "category": "Ever After High",
+        "name": "Carnival Date Alistair Wonderland",
+        "year": 2015,
+        "conditionpurchased": "Boxe",
+        "quantity": 1,
+        "manufacturer": "Mattel"
+    },
+    {
+        "id": 452,
+        "categoryshort": "eah",
+        "category": "Ever After High",
+        "name": "Carnival Date Bunny Blanc",
+        "year": 2015,
+        "conditionpurchased": "Boxed",
+        "quantity": 1,
+        "manufacturer": "Mattel"
+    },
+    {
+        "id": 453,
+        "categoryshort": "eah",
+        "category": "Ever After High",
+        "name": "Signature Alistair Wonderland",
+        "year": 2015,
+        "conditionpurchased": "Used",
+        "quantity": 1,
+        "manufacturer": "Mattel"
+    },
+    {
+        "id": 454,
+        "categoryshort": "eah",
+        "category": "Ever After High",
+        "name": "Signature Faybelle Thorn",
+        "year": 2015,
+        "conditionpurchased": "Used",
+        "quantity": 1,
+        "manufacturer": "Mattel"
+    },
+    {
+        "id": 455,
+        "categoryshort": "eah",
+        "category": "Ever After High",
+        "name": "Signature Justine Dancer",
+        "year": 2015,
+        "conditionpurchased": "Used",
+        "quantity": 1,
+        "manufacturer": "Mattel"
+    },
+    {
+        "id": 456,
+        "categoryshort": "eah",
+        "category": "Ever After High",
+        "name": "Birthday Ball Blondie Lockes",
+        "year": 2016,
+        "conditionpurchased": "Used",
+        "quantity": 1,
+        "manufacturer": "Mattel"
+    },
+    {
+        "id": 457,
+        "categoryshort": "eah",
+        "category": "Ever After High",
+        "name": "Archery Club Ashlynn Ella",
+        "year": 2016,
+        "conditionpurchased": "Boxed",
+        "quantity": 1,
+        "manufacturer": "Mattel"
+    },
+    {
+        "id": 458,
+        "categoryshort": "eah",
+        "category": "Ever After High",
+        "name": "Signature Jillian Beanstalk",
+        "year": 2016,
+        "conditionpurchased": "Used",
+        "quantity": 1,
+        "manufacturer": "Mattel"
+    },
+    {
+        "id": 459,
+        "categoryshort": "eah",
+        "category": "Ever After High",
+        "name": "Thronecoming II Briar Beauty",
+        "year": 2017,
+        "conditionpurchased": "Boxed",
+        "quantity": 1,
+        "manufacturer": "Mattel"
+    },
+    {
+        "id": 460,
+        "categoryshort": "mh",
+        "category": "Monster High",
+        "name": "Power Ghouls Spectra Vondergeist",
+        "year": 2012,
+        "conditionpurchased": "Used",
+        "quantity": 1,
+        "manufacturer": "Mattel"
+    },
+    {
+        "id": 461,
+        "categoryshort": "mh",
+        "category": "Monster High",
+        "name": "Frights Camera Action! Hauntlywood Viperine Gorgon",
+        "year": 2013,
+        "conditionpurchased": "Used",
+        "quantity": 1,
+        "manufacturer": "Mattel"
+    },
+    {
+        "id": 462,
+        "categoryshort": "mh",
+        "category": "Monster High",
+        "name": "Shriekwrecked Nautical Ghouls Draculaura",
+        "year": 2016,
+        "conditionpurchased": "Used",
+        "quantity": 1,
+        "manufacturer": "Mattel"
+    },
+    {
+        "id": 463,
+        "categoryshort": "mh",
+        "category": "Monster High",
+        "name": "Boo-Jeweled Beauty Case Cleo De Nile",
+        "year": 2023,
+        "conditionpurchased": "New",
+        "quantity": 1,
+        "manufacturer": "Mattel"
+    },
+    {
+        "id": 464,
+        "categoryshort": "mh",
+        "category": "Monster High",
+        "name": "(G3) Core Abbey Bominable",
+        "year": 2023,
+        "conditionpurchased": "New",
+        "quantity": 1,
+        "manufacturer": "Mattel"
+    },
+    {
+        "id": 465,
+        "categoryshort": "mh",
+        "category": "Monster High",
+        "name": "(G3) Core Clawd Wolf",
+        "year": 2023,
+        "conditionpurchased": "New",
+        "quantity": 1,
+        "manufacturer": "Mattel"
+    },
+    {
+        "id": 466,
+        "categoryshort": "mh",
+        "category": "Monster High",
+        "name": "Faboolous Pets Cleo De Nile",
+        "year": 2023,
+        "conditionpurchased": "New",
+        "quantity": 1,
+        "manufacturer": "Mattel"
+    },
+    {
+        "id": 467,
+        "categoryshort": "mh",
+        "category": "Monster High",
+        "name": "Fan-Sea Lagoona Blue",
+        "year": 2023,
+        "conditionpurchased": "New",
+        "quantity": 1,
+        "manufacturer": "Mattel"
+    },
+    {
+        "id": 468,
+        "categoryshort": "rh",
+        "category": "Rainbow High",
+        "name": "Series Speical Amaya Raine",
+        "year": 2020,
+        "conditionpurchased": "Used",
+        "quantity": 1,
+        "manufacturer": "MGA Entertainment"
+    },
+    {
+        "id": 469,
+        "categoryshort": "rh",
+        "category": "Rainbow High",
+        "name": "Cheer Jade Hunter",
+        "year": 2021,
+        "conditionpurchased": "Used",
+        "quantity": 1,
+        "manufacturer": "MGA Entertainment"
+    },
+    {
+        "id": 470,
+        "categoryshort": "rh",
+        "category": "Rainbow High",
+        "name": "Cheer Skyler Bradshaw",
+        "year": 2021,
+        "conditionpurchased": "Used",
+        "quantity": 1,
+        "manufacturer": "MGA Entertainment"
+    },
+    {
+        "id": 471,
+        "categoryshort": "rh",
+        "category": "Rainbow High",
+        "name": "Series 2 Karma Nichols",
+        "year": 2021,
+        "conditionpurchased": "Used",
+        "quantity": 1,
+        "manufacturer": "MGA Entertainment"
+    },
+    {
+        "id": 472,
+        "categoryshort": "rh",
+        "category": "Rainbow High",
+        "name": "Series 3 Daria Roselyn",
+        "year": 2021,
+        "conditionpurchased": "New",
+        "quantity": 1,
+        "manufacturer": "MGA Entertainment"
+    },
+    {
+        "id": 473,
+        "categoryshort": "rh",
+        "category": "Rainbow High",
+        "name": "Series Specia Kia Heart",
+        "year": 2021,
+        "conditionpurchased": "Used",
+        "quantity": 1,
+        "manufacturer": "MGA Entertainment"
+    },
+    {
+        "id": 474,
+        "categoryshort": "rh",
+        "category": "Rainbow High",
+        "name": "Shadow High Series 1 Heather Grayson",
+        "year": 2021,
+        "conditionpurchased": "New",
+        "quantity": 1,
+        "manufacturer": "MGA Entertainment"
+    },
+    {
+        "id": 475,
+        "categoryshort": "rh",
+        "category": "Rainbow High",
+        "name": "Shadow High Series 1 Natasha Zima",
+        "year": 2021,
+        "conditionpurchased": "New",
+        "quantity": 1,
+        "manufacturer": "MGA Entertainment"
+    },
+    {
+        "id": 476,
+        "categoryshort": "rh",
+        "category": "Rainbow High",
+        "name": "Rainbow Vision Neon Shadow Uma Vanhoose",
+        "year": 2022,
+        "conditionpurchased": "New",
+        "quantity": 1,
+        "manufacturer": "MGA Entertainment"
+    },
+    {
+        "id": 477,
+        "categoryshort": "rh",
+        "category": "Rainbow High",
+        "name": "Shadow High Series 2 Dia Monte",
+        "year": 2022,
+        "conditionpurchased": "New",
+        "quantity": 1,
+        "manufacturer": "MGA Entertainment"
+    },
+    {
+        "id": 478,
+        "categoryshort": "rh",
+        "category": "Rainbow High",
+        "name": "Fantastic Fashion Violet Willow",
+        "year": 2023,
+        "conditionpurchased": "New",
+        "quantity": 1,
+        "manufacturer": "MGA Entertainment"
+    },
+    {
+        "id": 479,
+        "categoryshort": "rh",
+        "category": "Rainbow High",
+        "name": "Shadow High Series 3 Lavender Lynn",
+        "year": 2023,
+        "conditionpurchased": "New",
+        "quantity": 1,
+        "manufacturer": "MGA Entertainment"
+    },
+    {
+        "id": 480,
+        "categoryshort": "lol",
+        "category": "LOL Surprise (entire franchise)",
+        "name": "OMG Fierce Swag",
+        "year": 2022,
+        "conditionpurchased": "New",
+        "quantity": 1,
+        "manufacturer": "MGA Entertainment"
+    },
+    {
+        "id": 481,
+        "categoryshort": "lol",
+        "category": "LOL Surprise (entire franchise)",
+        "name": "OMG Fierce Neonlicious",
+        "year": 2022,
+        "conditionpurchased": "New",
+        "quantity": 1,
+        "manufacturer": "MGA Entertainment"
+    },
+    {
+        "id": 482,
+        "categoryshort": "lol",
+        "category": "LOL Surprise (entire franchise)",
+        "name": "Tweens Series 2 Jenny Rox",
+        "year": 2023,
+        "conditionpurchased": "New",
+        "quantity": 1,
+        "manufacturer": "MGA Entertainment"
+    },
+    {
+        "id": 483,
+        "categoryshort": "lol",
+        "category": "LOL Surprise (entire franchise)",
+        "name": "Tweens Series 4 Olivia Flutter",
+        "year": 2023,
+        "conditionpurchased": "New",
+        "quantity": 1,
+        "manufacturer": "MGA Entertainment"
+    },
+    {
+        "id": 484,
+        "categoryshort": "lol",
+        "category": "LOL Surprise (entire franchise)",
+        "name": "OMG Series 8 Wildflower",
+        "year": 2023,
+        "conditionpurchased": "New",
+        "quantity": 1,
+        "manufacturer": "MGA Entertainment"
+    },
+    {
+        "id": 485,
+        "categoryshort": "misc",
+        "category": "Miscellaneous",
+        "name": "Diva Starz \"first edition\" Alexa",
+        "year": 2000,
+        "conditionpurchased": "Used",
+        "quantity": 1,
+        "manufacturer": "Mattel"
+    },
+    {
+        "id": 486,
+        "categoryshort": "misc",
+        "category": "Miscellaneous",
+        "name": "La Dee Da City Girl Dee",
+        "year": 2012,
+        "conditionpurchased": "Used",
+        "quantity": 1,
+        "manufacturer": "Spin Master"
+    },
+    {
+        "id": 487,
+        "categoryshort": "misc",
+        "category": "Miscellaneous",
+        "name": "Mermaze Mermaids Waves Harmonique",
+        "year": 2022,
+        "conditionpurchased": "New",
+        "quantity": 1,
+        "manufacturer": "MGA Entertainment"
+    },
+    {
+        "id": 488,
+        "categoryshort": "misc",
+        "category": "Miscellaneous",
+        "name": "Fidgie Friends Fairie Garden",
+        "year": 2023,
+        "conditionpurchased": "New",
+        "quantity": 1,
+        "manufacturer": "Sunny Days Entertainment"
+    },
+    {
+        "id": 489,
+        "categoryshort": "misc",
+        "category": "Miscellaneous",
+        "name": "Magic Mixies Pixlings Unia",
+        "year": 2023,
+        "conditionpurchased": "New",
+        "quantity": 1,
+        "manufacturer": "Moose Toys"
+    },
+    {
+        "id": 490,
+        "categoryshort": "misc",
+        "category": "Miscellaneous",
+        "name": "Magic Mixies Pixlings Wynter",
+        "year": 2023,
+        "conditionpurchased": "New",
+        "quantity": 1,
+        "manufacturer": "Moose Toys"
+    },
+    {
+        "id": 491,
+        "categoryshort": "barbie",
+        "category": "Barbie",
+        "name": "Kelly Club All Grown Up Lil' Flyer Marisa",
+        "year": 2002,
+        "conditionpurchased": "Used (friend's childhood)",
+        "quantity": 1,
+        "manufacturer": "Mattel"
+    },
 
 ]
