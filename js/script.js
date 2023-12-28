@@ -72,7 +72,7 @@ var searchManufacturer="";
 var dataArrDolls;
 $ajaxUtils.sendGetRequest("../Dannys-Dolls/dolls.json",false, function(res) {
 	var data = res.responseText;
-	// console.log(data);
+	console.log(data);
 	dataArrDolls = JSON.parse(data);
 	dataArrDolls = dataArrDolls.sort((a, b) => {
 		ayear = a.year.toString().substr(0,4);
