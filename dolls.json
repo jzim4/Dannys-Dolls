@@ -4909,7 +4909,7 @@
         "id": 487,
         "categoryshort": "misc",
         "category": "Miscellaneous",
-        "name": "Mermaze Mermaids Waves Harmonique",
+        "name": "Mermaze Mermaids Winter Waves Harmonique ",
         "year": 2022,
         "conditionpurchased": "New",
         "quantity": 1,
@@ -4952,6 +4952,37 @@
         "name": "Kelly Club All Grown Up Lil' Flyer Marisa",
         "year": 2002,
         "conditionpurchased": "Used (friend's childhood)",
+        "quantity": 1,
+        "manufacturer": "Mattel"
+    },
+    {
+        "id": 492,
+        "categoryshort": "bratz",
+        "category": "Bratz",
+        "name": "The Bratz Pack Dana",
+        "year": 2023,
+        "conditionpurchased": "New",
+        "quantity": 1,
+        "manufacturer": "MGA Entertainment",
+        "notes": "Reproduction of 2003 Funk 'N' Glow Dana"
+    },
+    {
+        "id": 493,
+        "categoryshort": "eah",
+        "category": "Ever After High",
+        "name": "Powerful Princess Club Apple White",
+        "year": 2016,
+        "conditionpurchased": "Boxed",
+        "quantity": 1,
+        "manufacturer": "Mattel"
+    },
+    {
+        "id": 494,
+        "categoryshort": "mh",
+        "category": "Monster High",
+        "name": "Creepover Party Frankie Stein",
+        "year": 2022,
+        "conditionpurchased": "New",
         "quantity": 1,
         "manufacturer": "Mattel"
     }
