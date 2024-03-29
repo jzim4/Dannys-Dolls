@@ -1,0 +1,25 @@
+{
+  "name": "dannys-dolls",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crunchy-nutella/Dannys-Dolls.git"
+  },
+  "author": "Jonah Zimmer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/crunchy-nutella/Dannys-Dolls/issues"
+  },
+  "homepage": "https://github.com/crunchy-nutella/Dannys-Dolls#readme",
+  "dependencies": {
+    "ajax": "^0.0.4",
+    "browserify": "^17.0.0",
+    "contentful": "^10.8.0",
+    "contentful-import": "^9.4.46"
+  }
+}
