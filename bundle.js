@@ -38,39 +38,6 @@ function script(clothes, dolls) {
     console.log(dataArrDolls[0].image[0].fields);
     console.log(dataArrDolls[0].image[0].fields.file.url);
 
-    var toShortCategory = function (longCategory) {
-        if (longCategory == "American Girl") {
-            return "ag";
-        }
-        if (longCategory == "Barbie") {
-            return "barbie";
-        }
-        if (longCategory == "Bratz") {
-            return "bratz";
-        }
-        if (longCategory == "Disney") {
-            return "disney";
-        }
-        if (longCategory == "Ever After High") {
-            return "eah";
-        }
-        if (longCategory == "LOL Surprise (entire franchise)") {
-            return "lol";
-        }
-        if (longCategory == "Monster High") {
-            return "mh";
-        }
-        if (longCategory == "Rainbow High") {
-            return "rh";
-        }
-        if (longCategory == "McDonald's") {
-            return "mac";
-        }
-        if (longCategory == "Miscellaneous") {
-            return "misc";
-        }
-    }
-
     var removeSpaces = function(stringBefore) {
         return stringBefore.replace(/ /g, "");
     }
@@ -125,16 +92,39 @@ function script(clothes, dolls) {
         for (var i=0; i<dataArrDolls.length; i++) {
             if (dataArrDolls[i].brand == searchCategory) {
                 onDisplay.push("a" + removeSpaces(dataArrDolls[i].name));
-                var prepareToBody = insertProperty(html,"categoryshort", toShortCategory(dataArrDolls[i].brand));                
-                var prepareToBody1 = insertProperty(prepareToBody,"imageURL",dataArrDolls[i].image[0].fields.file.url);
+                var prepareToBody1 = insertProperty(html,"imageURL",dataArrDolls[i].image[0].fields.file.url);
                 var prepareToBody2 = insertProperty(prepareToBody1,"name",dataArrDolls[i].name);
                 var prepareToBody3 = insertProperty(prepareToBody2,"id","a" + removeSpaces(dataArrDolls[i].name));
                 toBody += prepareToBody3;
             }
         }
         // console.log(toBody);
-        document.getElementById("body").innerHTML = toBody;
+        document.getElementById("body").innerHTML = searchingLabel + toBody;
         clickableDolls();
+    }
+
+    var displayClothesSearch = function() {
+        var toBody = "";
+        var html;
+        
+        onDisplay = [];
+        searchingLabel = "<div id=\"searchingLabelBox1\"> Search for:";
+        searchingLabel += "<span class=\"searchingLabel\">Clothes</span>";
+        searchingLabel += "</div>";
+
+        html = snippets[3];
+
+        for (var i=0; i<dataArrClothes.length; i++) {
+            onDisplay.push("a" + removeSpaces(dataArrClothes[i].name));
+            var prepareToBody1 = insertProperty(html,"imageURL",dataArrClothes[i].image[0].fields.file.url);
+            var prepareToBody2 = insertProperty(prepareToBody1,"name",dataArrClothes[i].name);
+            var prepareToBody3 = insertProperty(prepareToBody2,"id","a" + removeSpaces(dataArrClothes[i].name));
+            toBody += prepareToBody3;
+            
+        }
+        // console.log(toBody);
+        document.getElementById("body").innerHTML = searchingLabel + toBody;
+        clickableClothes();
     }
 
     var clickableDolls = function() {
@@ -149,8 +139,7 @@ function script(clothes, dolls) {
 
     var clickableClothes = function() {
         for (var i=0; i<dataArrClothes.length; i++) {
-            if (onDisplay.includes("a" + dataArrClothes[i].id)) {
-                idToSend = dataArrClothes[i].id;
+            if (onDisplay.includes("a" + removeSpaces(dataArrClothes[i].name))) {
                 document.getElementById("a" + dataArrClothes[i]).addEventListener("click",(hit)=>displayClothesIdPage(hit.target.id));
             }
         };
@@ -172,7 +161,7 @@ function script(clothes, dolls) {
 
         var img = "<img class=\"idImg\" src = \"" + doll.image[0].fields.file.url + "\"></img>"
         
-        var addImage = insertProperty(html,"img",img);
+        var prepareToBody = insertProperty(html,"img",img);
 
         // if (/* THERE ARE TWO PICTURES */) {
         //     img += "<img class=\"idImg\" src=\"doll.image\"></img>"; //NOT SURE IF THIS WILL GET THE IMAGE
@@ -182,8 +171,7 @@ function script(clothes, dolls) {
         //     img = "<img class=\"idImg2\" src=\"doll.image\"></img>"; //NOT SURE IF THIS WILL GET THE IMAGE
         //     widthClass = "col-lg-4 col-md-4 col-sm-12 col-xs-12";
         // }
-        var prepareToBody = insertProperty(addImage,"width",widthClass);
-        var prepareToBody1 = insertProperty(prepareToBody,"categoryshort",toShortCategory(doll.brand));
+        var prepareToBody1 = insertProperty(prepareToBody,"width",widthClass);
         var prepareToBody2 = insertProperty(prepareToBody1,"name",doll.name);
         var prepareToBody3 = insertProperty(prepareToBody2,"year",doll.year);
         var prepareToBody4 = insertProperty(prepareToBody3,"conditionpurchased",doll.condition);
@@ -209,8 +197,71 @@ function script(clothes, dolls) {
 
         document.getElementById("searchingLabelBox2").addEventListener("click",() =>
             displayDollSearch(searchCategory));
+    } 
+
+    var displayClothesIdPage = function(clothesId) {
+        window.scrollTo(0,0);
+        var toBody = "";
+        var html = snippets[1];
+        for (var i=0; i<dataArrClothes.length; i++) {
+            if ("a" + removeSpaces(dataArrClothes[i].name) == clothesId) {
+                var clothes = dataArrClothes[i];
+                break;
+            }
+        }
+
+        var img = "<img class=\"idImg\" src = \"" + clothes.image[0].fields.file.url + "\"></img>"
+        
+        var prepareToBody = insertProperty(html,"img",img);
+
+        // if (/* THERE ARE TWO PICTURES */) {
+        //     img += "<img class=\"idImg\" src=\"doll.image\"></img>"; //NOT SURE IF THIS WILL GET THE IMAGE
+        //     widthClass = "col-lg-6 col-md-6 col-sm-12 col-xs-12";
+        // }
+        // if (/* THERE ARE THREE PICTURES */) {
+        //     img = "<img class=\"idImg2\" src=\"doll.image\"></img>"; //NOT SURE IF THIS WILL GET THE IMAGE
+        //     widthClass = "col-lg-4 col-md-4 col-sm-12 col-xs-12";
+        // }
+
+
+        var prepareToBody1 = insertProperty(prepareToBody,"name",clothes.name);
+        var prepareToBody2 = insertProperty(prepareToBody1,"year",clothes.year);
+        var prepareToBody3 = insertProperty(prepareToBody2,"line",clothes.line);
+        var prepareToBody4 = insertProperty(prepareToBody3,"character",clothes.character);
+        var prepareToBody5 = insertProperty(prepareToBody4,"quantity",clothes.quantity);
+        var prepareToBody6 = insertProperty(prepareToBody5,"complete",clothes.complete);
+
+        if (clothes.hasOwnProperty("notes")) {
+            var prepareToBody7 = insertProperty(prepareToBody6,"notes",clothes.notes);
+        }
+        else {
+            var prepareToBody7 = prepareToBody6.replace("<div id = \"idNotes\" class=\"idInfoLine\">- Notes: {{notes}}</div>","");
+        }
+        var prepareToBody8 = insertProperty(prepareToBody7,"descr",clothes.description);
+
+        // console.log(prepareToBody8);
+
+        toBody += prepareToBody8;
+        searchingLabel = searchingLabel.replace("Search", "Return to search");
+        searchingLabel = searchingLabel.replace("1", "2");
+        document.getElementById("body")
+        .innerHTML = searchingLabel + toBody;
+
+        //document.getElementsByClassName("idImg").style.setProperty('--width', width + "%");
+
+        document.getElementById("searchingLabelBox2").addEventListener("click",() =>
+            displayDollSearch(searchCategory));
         
     } 
+
+
+
+
+
+
+
+
+
     var toRun = function() {
         homeButton();
         categoriesOpener();
