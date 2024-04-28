@@ -42,7 +42,7 @@ function script(clothes, dolls) {
         document.getElementById("lolCategory").addEventListener("click", () => displayDollSearch("LOL Surprise (entire franchise)"));
         document.getElementById("monsterCategory").addEventListener("click", () => displayDollSearch("Monster High"));
         document.getElementById("rainbowCategory").addEventListener("click", () => displayDollSearch("Rainbow High"));
-        document.getElementById("macCategory").addEventListener("click", () => displayDollSearch("McDonald\'s Toys"));
+        document.getElementById("macCategory").addEventListener("click", () => displayDollSearch("McDonald\'s"));
         document.getElementById("miscCategory").addEventListener("click", () => displayDollSearch("Miscellaneous"));
         document.getElementById("clothesCategory").addEventListener("click", () => displayClothesSearch());
     }

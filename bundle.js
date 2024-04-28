@@ -72,14 +72,14 @@ function script(clothes, dolls) {
         document.getElementById("lolCategory").addEventListener("click", () => displayDollSearch("LOL Surprise (entire franchise)"));
         document.getElementById("monsterCategory").addEventListener("click", () => displayDollSearch("Monster High"));
         document.getElementById("rainbowCategory").addEventListener("click", () => displayDollSearch("Rainbow High"));
-        document.getElementById("macCategory").addEventListener("click", () => displayDollSearch("McDonald\'s Toys"));
+        document.getElementById("macCategory").addEventListener("click", () => displayDollSearch("McDonald\'s"));
         document.getElementById("miscCategory").addEventListener("click", () => displayDollSearch("Miscellaneous"));
         document.getElementById("clothesCategory").addEventListener("click", () => displayClothesSearch());
     }
 
     var displayDollSearch = function(searchCategoryInput) {
         var toBody = "";
-        var html;
+        var html = snippets[3];
         searchCategory = searchCategoryInput;
         
         onDisplay = [];
@@ -87,7 +87,7 @@ function script(clothes, dolls) {
         searchingLabel += "<span class=\"searchingLabel\">" + searchCategory + "</span>";
         searchingLabel += "</div>";
 
-        html = snippets[3];
+        
 
         for (var i=0; i<dataArrDolls.length; i++) {
             if (dataArrDolls[i].brand == searchCategory) {
@@ -105,14 +105,12 @@ function script(clothes, dolls) {
 
     var displayClothesSearch = function() {
         var toBody = "";
-        var html;
+        var html = snippets[3];
         
         onDisplay = [];
         searchingLabel = "<div id=\"searchingLabelBox1\"> Search for:";
         searchingLabel += "<span class=\"searchingLabel\">Clothes</span>";
         searchingLabel += "</div>";
-
-        html = snippets[3];
 
         for (var i=0; i<dataArrClothes.length; i++) {
             onDisplay.push("a" + removeSpaces(dataArrClothes[i].name));
