@@ -1,3 +1,5 @@
+// ./node_modules/.bin/browserify ./js/contentful.js -o bundle.js
+
 const contentful = require('contentful')
 const script = require('./script.js')
 
@@ -7,15 +9,20 @@ const client = contentful.createClient({
   accessToken: 'vjvHhmdNkUZVDfDDWDErJmqHBa4JEVRUtNb2Yekry5U'
 })
 
-client.getEntries().then(function (entries) {
+var clothes = [];
+var dolls = [];
+
+client.getEntries({
+  skip: 100,
+  limit: 1000
+}).then(function (entries) {
   entries.items.forEach(function (entry) {
-      console.log(entry.fields.manufacturer);
+    if (entry.sys.contentType.sys.id == "clothes") {
+      clothes.push(entry.fields);
+    }
+    else if (entry.sys.contentType.sys.id == "doll") {
+      dolls.push(entry.fields);
+    }
   });
-  script();
+  script(clothes, dolls);
 });
-
-
-
-  // // log the title for all the entries that have it
-  // entries.items.forEach(function (entry) {
-  //   addContent(entry.fields.manufacturer);

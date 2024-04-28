@@ -29,8 +29,10 @@ body {
   color: #4C2E74;
   cursor: pointer;
 }
-#shortHeader, #fullHeader {
-  float: left;
+#ddLogo {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
 }
 #headerContainer {
   background-color: #a570e8;
@@ -40,10 +42,10 @@ body {
   position: relative;
   width: 100%;
   max-width: 1140px;
-  display: flex;
+  display: block;
   align-items: center;
   justify-content: center;
-  padding: 10px 0;
+  padding: 10px;
   margin-left: auto;
   margin-right: auto;
   z-index: 100000;
@@ -224,176 +226,12 @@ h1 {
     display: none;
   }
 }
-}
 @media (max-width: 991px) {
   #searchLine {
     display: visible;
   }
 }
 
-
-/* SIGN IN MENU */
-
-#signInPage {
-  color: white;
-  position: absolute;
-  right: 10px;
-  background-color: rgb(76, 46, 116);
-  font-size: 1.25em;
-}
-.signInPage {
-  padding: 20px;
-  padding-bottom: 62px;
-}
-#signInInput {
-  padding: 2px;
-  margin-bottom: 10px;
-  width: 100%;
-  font-size: 1.2em;
-  color:#4c2e74;
-}
-#signInInput:focus{
-  outline:none;
-  box-shadow: 1px 0px grey;
-}
-#submitSignIn {
-  right: 20px;
-  bottom: 15px;
-}
-#cancelSignIn {
-  right: 128px;
-  bottom: 15px;
-}
-.signInInstructions {
-  margin-bottom: 3px;
-}
-
-@media (min-width: 1024px) {
-  #signInPage {
-    margin-top:17.25px;
-  }
-}
-@media (max-width: 1023px) and (min-width:769px) {
-  #signInPage {
-    margin-top:17.25px;
-  }
-}
-@media (max-width: 768px) and (min-width:426px) {
-  #signInPage {
-    margin-top:12.5px;
-  }
-}
-@media (max-width:425px) {
-  #signInPage {
-    margin-top: 20px;
-  }
-}
-
-/* EDIT PAGE */
-#editPage {
-  position: relative;
-  max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
-  color: white;
-}
-.editSection {
-  padding: 10px 20px;
-  float: left;
-  width: 100%;
-}
-#addDoll, #addClothes {
-  padding: 15px;
-  padding-bottom: 40px;
-  border: solid 2px #4c2e74;
-  background: #4c2e74;
-  position: relative;
-  margin-bottom: 62.5px;
-}
-#addDoll {
-  --addDoll: 0px;
-  margin-bottom: calc(62.5px + var(--addDoll));
-}
-.editSectionLabel {
-  font-size: 1.5em;
-  padding: 15px;
-  margin-bottom: 10px;
-  background: #4c2e74;
-}
-.editInput {
-  width: 100%;
-  padding: 2px;
-  margin-bottom: 10px;
-  font-size: 1.25em;
-  color:#4c2e74;
-}
-.editInput:focus{
-  outline:none;
-  box-shadow: 2px 2px grey;
-}
-.editInputImage {
-  width: 80%;
-}
-.editInstructions {
-  font-size: 0.7em;
-}
-input[type="file"] {
-    display: none;
-}
-.imageInput, .editSubmit {
-  border: solid 2px white;
-  border-radius: 8px;
-  padding: 8px;
-}
-.imageInput {
-  position: relative;
-  top: 15px;
-}
-.editSubmit {
-  font-family: comfortaa;
-  font-size: 1.2em;
-  background-color: transparent;
-  width: 100%;
-  text-align: center;
-  left: 0;
-  border: solid 2px #4c2e74;
-  color: #4c2e74;
-  position: absolute;
-}
-.editLabel {
-  font-weight: 900;
-}
-.imageInput:hover {
-  background-color: #d2a3ec;
-  cursor: pointer;
-}
-.editSubmit:hover {
-  color: white;
-  cursor: pointer;
-  border: white solid 2px;
-}
-.submitEditError {
-  color: red;
-  position: absolute;
-}
-.imageInputName {
-  position: relative;
-  top: 15px;
-}
-#submitDollError {
-  --submitDollError: 0px;
-  bottom: calc(var(--submitDollError) + -10px);
-}
-#editDollSubmit {
-  position: absolute;
-  --editDollSubmit: 0px;
-  bottom: calc(var(--editDollSubmit) + -55px);
-}
-#editClothesSubmit {
-  position: absolute;
-  --editClothesSubmit: 0px;
-  bottom: calc(var(--editClothesSubmit) + -50px);
-}
 /* CATEGORIES */
 .categoryImg {
   width: 100%;
@@ -535,6 +373,8 @@ input[type="file"] {
 .idImg, .idImg2 {
   border: 1px solid #4c2e74;
   margin: 5px;
+  max-width: 300px;
+  object-fit: scale-down;
 }
 .idInfo {
   line-height: 1.25;

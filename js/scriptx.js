@@ -1,5 +1,5 @@
 // var $ajaxUtils = require('./ajax-utils.js');
-var categoriesSnippet = require('../snippets/categoriesSnippet')
+var categoriesSnippet = require('./snippets')
 
 // var insertProperty = function (string, propName, propValue) {
 // 	var propToReplace = "{{" + propName + "}}";
