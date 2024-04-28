@@ -12,12 +12,13 @@ const client = contentful.createClient({
 
 var clothes = [];
 var dolls = [];
+var count = 0;
 
 client.getEntries({
-  skip: 100,
   limit: 1000
 }).then(function (entries) {
   entries.items.forEach(function (entry) {
+    count += 1;
     if (entry.sys.contentType.sys.id == "clothes") {
       clothes.push(entry.fields);
     }
@@ -25,6 +26,7 @@ client.getEntries({
       dolls.push(entry.fields);
     }
   });
+  console.log(count);
   script(clothes, dolls);
 });
 },{"./script.js":2,"contentful":6}],2:[function(require,module,exports){
@@ -34,6 +36,9 @@ function script(clothes, dolls) {
 
     var dataArrClothes = clothes;
     var dataArrDolls = dolls;
+
+    console.log(clothes.length);
+    console.log(dolls.length);
 
     var removeSpaces = function(stringBefore) {
         return stringBefore.replace(/ /g, "");

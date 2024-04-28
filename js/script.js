@@ -5,6 +5,9 @@ function script(clothes, dolls) {
     var dataArrClothes = clothes;
     var dataArrDolls = dolls;
 
+    console.log(clothes.length);
+    console.log(dolls.length);
+
     var removeSpaces = function(stringBefore) {
         return stringBefore.replace(/ /g, "");
     }

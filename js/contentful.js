@@ -11,12 +11,13 @@ const client = contentful.createClient({
 
 var clothes = [];
 var dolls = [];
+var count = 0;
 
 client.getEntries({
-  skip: 100,
   limit: 1000
 }).then(function (entries) {
   entries.items.forEach(function (entry) {
+    count += 1;
     if (entry.sys.contentType.sys.id == "clothes") {
       clothes.push(entry.fields);
     }
@@ -24,5 +25,6 @@ client.getEntries({
       dolls.push(entry.fields);
     }
   });
+  console.log(count);
   script(clothes, dolls);
 });
