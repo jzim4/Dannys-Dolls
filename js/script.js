@@ -5,9 +5,6 @@ function script(clothes, dolls) {
     var dataArrClothes = clothes;
     var dataArrDolls = dolls;
 
-    console.log(dataArrDolls[0].image[0].fields);
-    console.log(dataArrDolls[0].image[0].fields.file.url);
-
     var removeSpaces = function(stringBefore) {
         return stringBefore.replace(/ /g, "");
     }
@@ -68,7 +65,6 @@ function script(clothes, dolls) {
                 toBody += prepareToBody3;
             }
         }
-        // console.log(toBody);
         document.getElementById("body").innerHTML = searchingLabel + toBody;
         clickableDolls();
     }
@@ -90,7 +86,6 @@ function script(clothes, dolls) {
             toBody += prepareToBody3;
             
         }
-        // console.log(toBody);
         document.getElementById("body").innerHTML = searchingLabel + toBody;
         clickableClothes();
     }
@@ -153,7 +148,6 @@ function script(clothes, dolls) {
         }
         var prepareToBody8 = insertProperty(prepareToBody7,"descr",doll.description);
 
-        // console.log(prepareToBody8);
 
         toBody += prepareToBody8;
         searchingLabel = searchingLabel.replace("Search", "Return to search");
@@ -206,8 +200,6 @@ function script(clothes, dolls) {
             var prepareToBody7 = prepareToBody6.replace("<div id = \"idNotes\" class=\"idInfoLine\">- Notes: {{notes}}</div>","");
         }
         var prepareToBody8 = insertProperty(prepareToBody7,"descr",clothes.description);
-
-        // console.log(prepareToBody8);
 
         toBody += prepareToBody8;
         searchingLabel = searchingLabel.replace("Search", "Return to search");
