@@ -228,14 +228,6 @@ function script(clothes, dolls) {
         
     } 
 
-
-
-
-
-
-
-
-
     var toRun = function() {
         homeButton();
         categoriesOpener();
