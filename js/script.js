@@ -5,6 +5,17 @@ function script(clothes, dolls) {
     var dataArrClothes = clothes;
     var dataArrDolls = dolls;
 
+    for (i in dataArrClothes) {
+        if (dataArrClothes[i].description.includes("\\")) {
+            console.log(dataArrClothes[i].name);
+        }
+    }
+    for (i in dataArrDolls) {
+        if (dataArrDolls[i].description.includes("\\")) {
+            console.log(dataArrDolls[i].name);
+        }
+    }
+
     console.log(clothes.length);
     console.log(dolls.length);
 
@@ -106,7 +117,7 @@ function script(clothes, dolls) {
     var clickableClothes = function() {
         for (var i=0; i<dataArrClothes.length; i++) {
             if (onDisplay.includes("a" + removeSpaces(dataArrClothes[i].name))) {
-                document.getElementById("a" + dataArrClothes[i]).addEventListener("click",(hit)=>displayClothesIdPage(hit.target.id));
+                document.getElementById("a" + removeSpaces(dataArrClothes[i].name)).addEventListener("click",(hit)=>displayClothesIdPage(hit.target.id));
             }
         };
         window.scrollTo(0,0);
@@ -213,7 +224,7 @@ function script(clothes, dolls) {
         //document.getElementsByClassName("idImg").style.setProperty('--width', width + "%");
 
         document.getElementById("searchingLabelBox2").addEventListener("click",() =>
-            displayDollSearch(searchCategory));
+            displayClothesSearch());
         
     } 
 

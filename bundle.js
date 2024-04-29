@@ -37,6 +37,17 @@ function script(clothes, dolls) {
     var dataArrClothes = clothes;
     var dataArrDolls = dolls;
 
+    for (i in dataArrClothes) {
+        if (dataArrClothes[i].description.includes("\\")) {
+            console.log(dataArrClothes[i].name);
+        }
+    }
+    for (i in dataArrDolls) {
+        if (dataArrDolls[i].description.includes("\\")) {
+            console.log(dataArrDolls[i].name);
+        }
+    }
+
     console.log(clothes.length);
     console.log(dolls.length);
 
@@ -138,7 +149,7 @@ function script(clothes, dolls) {
     var clickableClothes = function() {
         for (var i=0; i<dataArrClothes.length; i++) {
             if (onDisplay.includes("a" + removeSpaces(dataArrClothes[i].name))) {
-                document.getElementById("a" + dataArrClothes[i]).addEventListener("click",(hit)=>displayClothesIdPage(hit.target.id));
+                document.getElementById("a" + removeSpaces(dataArrClothes[i].name)).addEventListener("click",(hit)=>displayClothesIdPage(hit.target.id));
             }
         };
         window.scrollTo(0,0);
@@ -245,7 +256,7 @@ function script(clothes, dolls) {
         //document.getElementsByClassName("idImg").style.setProperty('--width', width + "%");
 
         document.getElementById("searchingLabelBox2").addEventListener("click",() =>
-            displayDollSearch(searchCategory));
+            displayClothesSearch());
         
     } 
 
@@ -268,9 +279,9 @@ module.exports = script;
 },{"./snippets":3}],3:[function(require,module,exports){
 categoriesSnippet = "<div class = \"col-lg-3 col-md-4 col-sm-4 col-xs-6 categoryBox\"><div id = \"barbieCategory\" class = \"categoryImg\" style=\"background-image:url(./images/logos/barbieLogo.jpeg);\"></div></div><div class = \"col-lg-3 col-md-4 col-sm-4 col-xs-6 categoryBox\"><div id = \"americanCategory\" class = \"categoryImg\" style=\"background-image:url(./images/logos/americanLogo.jpeg);\"></div></div><div class = \"col-lg-3 col-md-4 col-sm-4 col-xs-6 categoryBox\"><div id = \"bratzCategory\" class = \"categoryImg\" style=\"background-image:url(./images/logos/bratzLogo.jpeg);\"></div></div><div class = \"col-lg-3 col-md-4 col-sm-4 col-xs-6 categoryBox\"><div id = \"disneyCategory\" class = \"categoryImg\" style=\"background-image:url(./images/logos/disneyLogo.jpeg);\"></div></div><div class = \"col-lg-3 col-md-4 col-sm-4 col-xs-6 categoryBox\"><div id = \"eahCategory\" class = \"categoryImg\" style=\"background-image:url(./images/logos/eahLogo.jpeg);\"></div></div><div class = \"col-lg-3 col-md-4 col-sm-4 col-xs-6 categoryBox\"><div id = \"lolCategory\" class = \"categoryImg\" style=\"background-image:url(./images/logos/lolLogo.jpeg);\"></div></div><div class = \"col-lg-3 col-md-4 col-sm-4 col-xs-6 categoryBox\"><div id = \"monsterCategory\" class = \"categoryImg\" style=\"background-image:url(./images/logos/monsterLogo.jpeg);\"></div></div><div class = \"col-lg-3 col-md-4 col-sm-4 col-xs-6 categoryBox\"><div id = \"rainbowCategory\" class = \"categoryImg\" style=\"background-image:url(./images/logos/rainbowLogo.jpeg);\"></div></div><div class = \"col-lg-3 col-md-4 col-sm-4 col-xs-6 categoryBox\"><div id = \"macCategory\" class = \"categoryImg\" style=\"background-image:url(./images/logos/macLogo.jpeg);\"></div></div><div class = \"col-lg-3 col-md-4 col-sm-4 col-xs-6 categoryBox\"><div id = \"miscCategory\" class = \"categoryImg\" style=\"background-image:url(./images/logos/miscLogo.jpeg);\"></div></div><div class = \"col-lg-3 col-md-4 col-sm-4 col-xs-6 categoryBox\"><div id = \"clothesCategory\" class = \"categoryImg\" style=\"background-image:url(./images/logos/clothesLogo.jpeg);\"></div></div>"
 
-idClothesSnippet = "<div id = \"idImgBox\">{{img}}</div><div class=\"idInfoBox\"><div class = \"idInfo\"><div id=\"idName\" class=\"idInfoLine\">{{name}}</div><div id=\"idYear\" class=\"idInfoLine\">- Year: {{year}}</div><div id=\"idLine\" class=\"idInfoLine\">- Line: {{line}}</div><div id=\"idCharacter\" class=\"idInfoLine\">- Character: {{character}}</div><div id=\"idQuantity\" class=\"idInfoLine\">- Quantity: {{quantity}}</div><div id=\"idComplete\" class=\"idInfoLine\">- Complete: {{complete}}</div></div></div><div id = \"idDescr\" class=\"idInfoLine\">{{descr}}</div>"
+idClothesSnippet = "<div id=\"idImgBox\">{{img}}</div><div class=\"idInfo\"><div id=\"idName\" class=\"idInfoLine\">{{name}}</div><div id=\"idInfo\"><div id=\"idYear\" class=\"idInfoLine\">- Year: {{year}}</div><div id=\"idLine\" class=\"idInfoLine\">- Line: {{line}}</div><div id=\"idCharacter\" class=\"idInfoLine\">- Character: {{character}}</div><div id=\"idQuantity\" class=\"idInfoLine\">- Quantity: {{quantity}}</div><div id=\"idComplete\" class=\"idInfoLine\">- Complete: {{complete}}</div></div></div><div id = \"idDescr\" class=\"idInfoLine\">{{descr}}</div>"
 
-idDollSnippet = "<div id=\"idImgBox\">{{img}}</div><div class = \"idInfo\"><div id=\"idName\" class=\"idInfoLine\">{{name}}</div><div id=\"idInfo\"><div id=\"idYear\" class=\"idInfoLine\">- Year: {{year}}</div><div id = \"idManufacturer\" class=\"idInfoLine\">- By {{manufacturer}}</div><div id = \"idCondition\" class=\"idInfoLine\">- Condition Purchased: {{conditionpurchased}}</div><div id = \"idQuantity\" class=\"idInfoLine\">- Quantity: {{quantity}}</div></div></div><div id = \"idDescr\" class=\"idInfoLine\">{{descr}}</div>"
+idDollSnippet    = "<div id=\"idImgBox\">{{img}}</div><div class=\"idInfo\"><div id=\"idName\" class=\"idInfoLine\">{{name}}</div><div id=\"idInfo\"><div id=\"idYear\" class=\"idInfoLine\">- Year: {{year}}</div><div id = \"idManufacturer\" class=\"idInfoLine\">- By {{manufacturer}}</div><div id = \"idCondition\" class=\"idInfoLine\">- Condition Purchased: {{conditionpurchased}}</div><div id = \"idQuantity\" class=\"idInfoLine\">- Quantity: {{quantity}}</div></div></div><div id = \"idDescr\" class=\"idInfoLine\">{{descr}}</div>"
 
 searchResultsSnippet = "<div class = \"col-lg-2 col-md-3 col-sm-3 col-xs-4 dollBox\"><div style=\"background-image:url({{imageURL}});\" id={{id}} class= \"dollImg\"></div><div class = \"dollLabel\">{{name}}</div></div>"
 
