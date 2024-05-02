@@ -271,18 +271,21 @@ h1 {
   padding: 2px;
   height: 44.5px;
 }
-.searchingLabel {
+#searchingLabelBox1 {
+  width: fit-content;
+  font-size: 1.5em;
   background-color: #f1c1ee;
-  padding: 5px;
+  padding: 10px 40px;
   border: 2px solid #4c2e74;
   border-radius: 10px;
-  margin: 5px;
+  margin: 10px auto 5px auto;
 }
-#searchingLabelBox1, #searchingLabelBox2{
+#searchingLabelBox2 {
   width: fit-content;
+  padding: 10px 40px;
   border: 2px solid #4c2e74;
-  padding: 12px;
 }
+
 #searchingLabelBox2:hover {
   cursor: pointer;
   border: dotted 2px #4c2e74;
@@ -300,9 +303,6 @@ h1 {
     width: 50%;
     float: left;
   }
-  #searchingLabelBox1, #searchingLabelBox2 {
-    margin: 15px;
-  }
 }
 @media (min-width: 425px) and (max-width: 767px) {
   .categoryBox {
@@ -310,9 +310,6 @@ h1 {
   }
   .dollBox {
     padding: 15px 10px;
-  }
-  #searchingLabelBox1, #searchingLabelBox2 {
-    margin: 30px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -322,9 +319,6 @@ h1 {
   .dollBox {
     padding: 10px 20px;
   }
-  #searchingLabelBox1, #searchingLabelBox2 {
-    margin: 20px;
-  }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   .categoryBox {
@@ -333,9 +327,6 @@ h1 {
   .dollBox {
     padding: 10px 20px;
   }
-  #searchingLabelBox1, #searchingLabelBox2 {
-    margin: 20px;
-  }
 }
 @media (min-width: 1200px) {
   .categoryBox {
@@ -343,9 +334,6 @@ h1 {
   }
   .dollBox {
     padding: 15px 30px;
-  }
-  #searchingLabelBox1, #searchingLabelBox2 {
-    margin: 30px;
   }
 }
 

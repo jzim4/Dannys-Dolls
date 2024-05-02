@@ -64,11 +64,7 @@ function script(clothes, dolls) {
         searchCategory = searchCategoryInput;
         
         onDisplay = [];
-        searchingLabel = "<div id=\"searchingLabelBox1\"> Search for:";
-        searchingLabel += "<span class=\"searchingLabel\">" + searchCategory + "</span>";
-        searchingLabel += "</div>";
-
-        
+        searchingLabel = "<div id=\"searchingLabelBox1\">" + searchCategory +  "</div>";
 
         for (var i=0; i<dataArrDolls.length; i++) {
             if (dataArrDolls[i].brand == searchCategory) {
@@ -88,9 +84,7 @@ function script(clothes, dolls) {
         var html = snippets[3];
         
         onDisplay = [];
-        searchingLabel = "<div id=\"searchingLabelBox1\"> Search for:";
-        searchingLabel += "<span class=\"searchingLabel\">Clothes</span>";
-        searchingLabel += "</div>";
+        searchingLabel = "<div id=\"searchingLabelBox1\">Clothes</div>";
 
         for (var i=0; i<dataArrClothes.length; i++) {
             onDisplay.push("a" + removeSpaces(dataArrClothes[i].name));
@@ -164,7 +158,9 @@ function script(clothes, dolls) {
 
 
         toBody += prepareToBody8;
-        searchingLabel = searchingLabel.replace("Search", "Return to search");
+        searchingLabel = "<div id=\"searchingLabelBox2\"> Return to all " + doll.brand + "</div>"
+        
+        searchingLabel.replace("Search", "Return to search");
         searchingLabel = searchingLabel.replace("1", "2");
         document.getElementById("body")
         .innerHTML = searchingLabel + toBody;
@@ -216,8 +212,7 @@ function script(clothes, dolls) {
         var prepareToBody8 = insertProperty(prepareToBody7,"descr",clothes.description);
 
         toBody += prepareToBody8;
-        searchingLabel = searchingLabel.replace("Search", "Return to search");
-        searchingLabel = searchingLabel.replace("1", "2");
+        searchingLabel = "<div id=\"searchingLabelBox2\"> Return to all Clothes</div>"
         document.getElementById("body")
         .innerHTML = searchingLabel + toBody;
 
