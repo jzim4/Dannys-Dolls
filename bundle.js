@@ -160,20 +160,23 @@ function script(clothes, dolls) {
                 break;
             }
         }
-        var widthClass = "col-lg-12 col-md-12 col-sm-12 col-xs-12";
+        var widthClass = "onePic";
 
-        var img = "<img class=\"idImg\" src = \"" + doll.image[0].fields.file.url + "\"></img>"
+        var img = "<img class=\"idImg {{width}} \" src = \"" + doll.image[0].fields.file.url + "\"></img>";
+        console.log(doll.image);
         
+        
+        if (doll.image.length >= 2) {
+            img += "<img class=\"idImg {{width}} \" src = \"" + doll.image[1].fields.file.url + "\"></img>";
+            widthClass = "twoPics";
+        }
+        if (doll.image.length == 3) {
+            img += "<img class=\"idImg {{width}} \" src = \"" + doll.image[2].fields.file.url + "\"></img>";
+            widthClass = "threePics";
+        }
+
         var prepareToBody = insertProperty(html,"img",img);
 
-        // if (/* THERE ARE TWO PICTURES */) {
-        //     img += "<img class=\"idImg\" src=\"doll.image\"></img>"; //NOT SURE IF THIS WILL GET THE IMAGE
-        //     widthClass = "col-lg-6 col-md-6 col-sm-12 col-xs-12";
-        // }
-        // if (/* THERE ARE THREE PICTURES */) {
-        //     img = "<img class=\"idImg2\" src=\"doll.image\"></img>"; //NOT SURE IF THIS WILL GET THE IMAGE
-        //     widthClass = "col-lg-4 col-md-4 col-sm-12 col-xs-12";
-        // }
         var prepareToBody1 = insertProperty(prepareToBody,"width",widthClass);
         var prepareToBody2 = insertProperty(prepareToBody1,"name",doll.name);
         var prepareToBody3 = insertProperty(prepareToBody2,"year",doll.year);
@@ -197,8 +200,6 @@ function script(clothes, dolls) {
         document.getElementById("body")
         .innerHTML = searchingLabel + toBody;
 
-        //document.getElementsByClassName("idImg").style.setProperty('--width', width + "%");
-
         document.getElementById("searchingLabelBox2").addEventListener("click",() =>
             displayDollSearch(searchCategory));
     } 
@@ -217,16 +218,6 @@ function script(clothes, dolls) {
         var img = "<img class=\"idImg\" src = \"" + clothes.image[0].fields.file.url + "\"></img>"
         
         var prepareToBody = insertProperty(html,"img",img);
-
-        // if (/* THERE ARE TWO PICTURES */) {
-        //     img += "<img class=\"idImg\" src=\"doll.image\"></img>"; //NOT SURE IF THIS WILL GET THE IMAGE
-        //     widthClass = "col-lg-6 col-md-6 col-sm-12 col-xs-12";
-        // }
-        // if (/* THERE ARE THREE PICTURES */) {
-        //     img = "<img class=\"idImg2\" src=\"doll.image\"></img>"; //NOT SURE IF THIS WILL GET THE IMAGE
-        //     widthClass = "col-lg-4 col-md-4 col-sm-12 col-xs-12";
-        // }
-
 
         var prepareToBody1 = insertProperty(prepareToBody,"name",clothes.name);
         var prepareToBody2 = insertProperty(prepareToBody1,"year",clothes.year);

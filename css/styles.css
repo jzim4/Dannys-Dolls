@@ -282,8 +282,9 @@ h1 {
 }
 #searchingLabelBox2 {
   width: fit-content;
-  padding: 10px 40px;
+  padding: 10px 10px;
   border: 2px solid #4c2e74;
+  margin-left: 10px
 }
 
 #searchingLabelBox2:hover {
@@ -348,22 +349,27 @@ h1 {
   margin-right: auto;
   width: fit-content;
 }
-@media (min-width: 769px) and (max-width: 935px) {
-  .idImg2 {
-    width: 32%;
-  }
-}
-@media (max-width: 768px) {
-  #idImgBox {
-    width: 300px;
-  }
-}
-.idImg, .idImg2 {
-  border: 1px solid #4c2e74;
-  margin: 5px;
+.idImg {
+  display: block;
+  border: 2px solid #4c2e74;
+  margin: 10px auto;
   max-width: 300px;
   object-fit: scale-down;
 }
+
+.twoPics {
+  display: inline-block;
+  margin: 5px;
+  width: 295px;
+}
+.threePics {
+  margin: 5px;
+  display: inline-block;
+  width: 193px;
+}
+
+
+
 .idInfo {
   line-height: 1.25;
 }
@@ -401,6 +407,12 @@ h1 {
 @media (max-width: 610px) {
   #idDescr.idInfoLine, #idInfo {
     width: 300px;
+  }
+  .twoPics {
+    max-width: 145px;
+  }
+  .threePics {
+    max-width: 93px;
   }
 }
 
